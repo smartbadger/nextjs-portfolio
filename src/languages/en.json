@@ -1,6 +1,6 @@
 {
     "meta": {
-
+        "copyright": "Connor Bailes ©2020. All rights reserved."
     },
     "nav": {
         "socialbar": "Follow me"
@@ -154,15 +154,75 @@
         ]
     },
     "projects": {
-
+        "title": "My Recent Projects",
+        "details": "More Details",
+        "items": [
+            {
+                "icon": "",
+                "title": "Statify",
+                "subtitle": "Shopify SaaS Application",
+                "tag": "Personal Project / Denver, CO / 2019",
+                "details": ""
+            },
+            {
+                "icon": "",
+                "title": "Cryptofill",
+                "subtitle": "UI Prototype",
+                "tag": "Startup / Denver, CO / 2019",
+                "details": ""
+            },
+            {
+                "icon": "",
+                "title": "Shopiyf Orders Map",
+                "subtitle": "Map that displays order history",
+                "tag": "Great Leaps LLC / Gainsville, FL / 2019",
+                "details": ""
+            }
+        ]
     },
     "certifications": {
-
+        "title": "My Certifications",
+        "certs": [
+            {
+                "title": "Shopify Theme Developer",
+                "issuer": "Shopify Partner Academy",
+                "date": "05/01/2019",
+                "link": ""
+            },
+            {
+                "title": "AWS Server Architecture",
+                "issuer": "Udemy",
+                "date": "06/01/2019",
+                "link": ""
+            },
+            {
+                "title": "Full Stack Web Developer",
+                "issuer": "Career Foundry",
+                "date": "12/15/2018",
+                "link": ""
+            },
+            {
+                "title": "SVG Animation",
+                "issuer": "Udemy",
+                "date": "06/01/2018",
+                "link": ""
+            },
+            {
+                "title": "Advanced SCSS/CSS",
+                "issuer": "Udemy",
+                "date": "06/01/2018",
+                "link": ""
+            },
+            {
+                "title": "Canvas Animations",
+                "issuer": "Udemy",
+                "date": "06/01/2018",
+                "link": ""
+            }
+        ]
     },
-    "references": {
-
-    }, 
     "contact": {
-
+        "title": "Contact me now!",
+        "subtitle": "Ready to get in touch? Please submit your details below and I'll get back to you as soon as possible"
     }
 }
