@@ -9,6 +9,7 @@ module.exports = {
     config.resolve.alias.atoms = path.join(__dirname, 'src/atoms');
     config.resolve.alias.components = path.join(__dirname, 'src/components');
     config.resolve.alias.languages = path.join(__dirname, 'src/languages');
+    config.resolve.alias.context = path.join(__dirname, 'src/context');
     config.resolve.alias.utils = path.join(__dirname, 'src/utils');
     return config
   }

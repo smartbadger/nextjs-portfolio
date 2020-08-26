@@ -1,0 +1,168 @@
+{
+    "meta": {
+
+    },
+    "nav": {
+        "socialbar": "Follow me"
+    },
+    "hero": {
+        "title": "Hi, I'm Connor",
+        "subtitle": "I'll help grow your business",
+        "message": "I'm Full Stack Web developer with experience in e-commerce and delivering SaaS products. I'm Familiar with marketing initiatives and bridging the gap between UI/UX and development. Worked in a cross functional team to deliver applications on time.",
+        "contact": "Contact Me"
+    },
+    "skills": {
+        "title": "My Featured Skills",
+        "skills": [
+            {
+                "skill": "Python",
+                "category": "Backend",
+                "image": "",
+                "competency": 0.75
+            },
+            {
+                "skill": "Mongo DB",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Postgres",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "MySQL",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Ruby",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "ReactJS",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Javascript",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "NextJS",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "FaunaDB",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "NodeJS",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "SCSS/CSS",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Cypress",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Jest",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Pug / Handlebars",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Webpack",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Gulp",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Babel",
+                "category": "",
+                "image": "",
+                "competency": 0
+            },
+            {
+                "skill": "Docker",
+                "category": "",
+                "image": "",
+                "competency": 0
+            }
+        ]
+    },
+    "experience": {
+        "title": "Work & Experience",
+        "history": [
+            {
+                "company": "Yodi LLC",
+                "title": "Founder - FullStack Developer",
+                "startdate": "10/31/2019",
+                "enddate": "present"
+            },
+            {
+                "company": "PopSockets LLC",
+                "title": "Frontend Developer",
+                "startdate": "05/15/2017",
+                "enddate": "10/31/2019"
+            },
+            {
+                "company": "Marietta College",
+                "title": "Jr. Web Developer",
+                "startdate": "08/20/2016",
+                "enddate": "05/10/2017"
+            },
+            {
+                "company": "Ricoh",
+                "title": "Software Intern",
+                "startdate": "05/31/2016",
+                "enddate": "08/10/2016"
+            }
+        ]
+    },
+    "projects": {
+
+    },
+    "certifications": {
+
+    },
+    "references": {
+
+    }, 
+    "contact": {
+
+    }
+}

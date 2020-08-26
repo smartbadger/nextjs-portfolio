@@ -1,15 +1,15 @@
-import PageTitle from "components/pagetitle";
 import Nav from "components/nav";
 
 
-export default () => {
+const Index = () => {
 
   return (
     <>
-      <PageTitle />
       <Nav />
 
 
     </>
   );
 };
+
+export default Index
