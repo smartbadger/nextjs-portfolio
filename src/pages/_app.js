@@ -1,13 +1,16 @@
 import { ThemeProvider } from 'styled-components'
-import { Normalize } from 'styled-normalize'
+import { LanguageProvider } from 'context/language'
+import Normalize from 'atoms/normalize'
 import theme from 'atoms/theme'
 
 const MyApp = ({ Component, pageProps }) => {
     return (
-        <ThemeProvider theme={theme}>
-            <Component {...pageProps} />
-            <Normalize />
-        </ThemeProvider>
+        <LanguageProvider>
+            <ThemeProvider theme={theme}>
+                <Component {...pageProps} />
+                <Normalize />
+            </ThemeProvider>
+        </LanguageProvider>
     )
 }
   
