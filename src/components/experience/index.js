@@ -1,9 +1,15 @@
-import ContentSection from "components/content-section"
+import ContentSection from "components/content-section";
+import { Heading, Image, Flex, Box, Button, Text } from "rebass";
+import { ExpItem } from "./styles";
+import { useState, useEffect } from "react";
 
-const Experience = () => {
+const Experience = ({title, history}) => {
     return (
         <ContentSection>
-
+            <Heading>{title}</Heading>
+            <>
+                {history.map(item => <Text>{item.title}</Text>)}
+            </>
         </ContentSection>
     )
 }
