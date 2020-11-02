@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const SkillItem = styled.div``
 
+export const SkillTab = styled.p`
+font-weight: ${props => props.active ? 'bold' : 'normal'};
+`
+
 export const ContainerStyles = styled.div`
     height: 20;
     width: '100%';

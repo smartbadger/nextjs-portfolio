@@ -1,15 +1,17 @@
 import ContentSection from "components/content-section";
 import { Heading, Image, Flex, Box, Button, Text } from "rebass";
-import { FillerStyles } from "./styles";
+import { FillerStyles, ContainerStyles, SkillItem, SkillTab} from "./styles";
 import { useState, useEffect } from "react";
 
 const SkillLevel = ({ value }) => {
-  <ContainerStyles>
-    <FillerStyles value={value} fillColor={"green"} />
-  </ContainerStyles>;
+  return (
+    <ContainerStyles>
+      <FillerStyles value={value} fillColor={"green"} />
+    </ContainerStyles>
+  );
 };
 
-const Skill = ({ skill, category, image, lvl }) => {
+const CreateSkill = ({ skill, category, image, lvl }) => {
   return (
     <SkillItem data-category={category}>
       <Image src={image} alt={skill} />
@@ -21,15 +23,17 @@ const Skill = ({ skill, category, image, lvl }) => {
 
 const buildSkillGroups = (skills) => {
   const group = {};
-  skills.forEach((skillObj) => {
+  skills.forEach((skillObj, index) => {
     const { category } = skillObj;
-    console.log(group)
-    const list = group[category] && group[category].length ? group[category] : [];
-    group[category] = list.push(<Skill {...skillObj} />);
+    if (!group[category] || !group[category].length) {
+      group[category] = [];
+    }
+    group[category].push(<CreateSkill {...skillObj} key={`skill-${index}`} />);
   });
-  console.log(group)
   return group;
 };
+
+const CategoryTabs = ({categories, active}) => (<>{categories.map(c => <SkillTab active={c== active} >{c}</SkillTab>)}</>)
 
 const Skills = ({ title, skills }) => {
   const [category, setCategory] = useState(skills[0].category);
@@ -37,7 +41,8 @@ const Skills = ({ title, skills }) => {
   return (
     <ContentSection>
       <Heading>{title}</Heading>
-      {SkillGroup[category]}
+      <CategoryTabs active={category} categories={Object.keys(SkillGroup)} />
+      <div>{SkillGroup[category]}</div>
     </ContentSection>
   );
 };
