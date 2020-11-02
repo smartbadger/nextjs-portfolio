@@ -9,7 +9,8 @@
         "title": "Hi, I'm Connor",
         "subtitle": "I'll help grow your business",
         "message": "I'm Full Stack Web developer with experience in e-commerce and delivering SaaS products. I'm Familiar with marketing initiatives and bridging the gap between UI/UX and development. Worked in a cross functional team to deliver applications on time.",
-        "contact": "Contact Me"
+        "contact": "Contact Me",
+        "image": "/images/myphoto.png"
     },
     "skills": {
         "title": "My Featured Skills",
@@ -18,109 +19,109 @@
                 "skill": "Python",
                 "category": "Backend",
                 "image": "",
-                "competency": 0.75
+                "lvl": 0.75
             },
             {
                 "skill": "Mongo DB",
-                "category": "",
+                "category": "Backend",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Postgres",
-                "category": "",
+                "category": "Backend",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "MySQL",
-                "category": "",
+                "category": "Backend",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Ruby",
-                "category": "",
+                "category": "Backend",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "ReactJS",
-                "category": "",
+                "category": "FrontEnd",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Javascript",
-                "category": "",
+                "category": "FrontEnd",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "NextJS",
-                "category": "",
+                "category": "FrontEnd",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "FaunaDB",
-                "category": "",
+                "category": "Backend",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "NodeJS",
-                "category": "",
+                "category": "Backend",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "SCSS/CSS",
-                "category": "",
+                "category": "FrontEnd",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Cypress",
-                "category": "",
+                "category": "DevOps",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Jest",
-                "category": "",
+                "category": "DevOps",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Pug / Handlebars",
-                "category": "",
+                "category": "FrontEnd",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Webpack",
-                "category": "",
+                "category": "DevOps",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             },
             {
                 "skill": "Gulp",
-                "category": "",
-                "image": "",
-                "competency": 0
+                "category": "DevOps",
+                "image": "DevOps",
+                "lvl": 0
             },
             {
                 "skill": "Babel",
-                "category": "",
-                "image": "",
-                "competency": 0
+                "category": "DevOps",
+                "image": "DevOps",
+                "lvl": 0
             },
             {
                 "skill": "Docker",
-                "category": "",
+                "category": "DevOps",
                 "image": "",
-                "competency": 0
+                "lvl": 0
             }
         ]
     },

@@ -29,7 +29,7 @@ export const LanguageProvider = ({ children }) => {
 };
 
 // get text according to id & current language
-export const Text = ({ tid }) => {
+export const getContent = (tid) => {
   const languageContext = useContext(LanguageContext);
 
   return languageContext.dictionary[tid] || tid;
