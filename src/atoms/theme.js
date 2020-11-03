@@ -12,7 +12,8 @@ export default
         white: '#ffffff',
         text: 'black',
         primary: 'blue',
-        secondary: 'lightGray'
+        secondary: 'lightGray',
+        green: '#0b4a5b'
     },
     space: [
       0, 4, 8, 16, 32, 64, 128, 256

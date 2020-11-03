@@ -15,7 +15,7 @@ const Cert = ({title, certs}) => {
         <ContentSection>
             <Heading>{title}</Heading>
             <div>
-            {certs.map(item => <CertItem {...item} />)}
+            {certs.map(item => <CertItem key={`cert__${item.title}`} {...item} />)}
             </div>
         </ContentSection>
     )

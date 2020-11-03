@@ -15,7 +15,7 @@ const Projects = ({title, details, items}) => {
         <ContentSection>
             <Heading>{title}</Heading>
             <div>
-            {items.map(item => <Project {...item} />)}
+            {items.map(item => <Project key={item.title} {...item} />)}
             </div>
         </ContentSection>
     )

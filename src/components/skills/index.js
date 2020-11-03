@@ -33,7 +33,7 @@ const buildSkillGroups = (skills) => {
   return group;
 };
 
-const CategoryTabs = ({categories, active}) => (<>{categories.map(c => <SkillTab active={c== active} >{c}</SkillTab>)}</>)
+const CategoryTabs = ({categories, active}) => (<>{categories.map(c => <SkillTab key={`skilltab__${c}`} active={c== active} >{c}</SkillTab>)}</>)
 
 const Skills = ({ title, skills }) => {
   const [category, setCategory] = useState(skills[0].category);

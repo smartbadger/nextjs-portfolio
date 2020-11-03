@@ -8,7 +8,7 @@ const Experience = ({title, history}) => {
         <ContentSection>
             <Heading>{title}</Heading>
             <>
-                {history.map(item => <Text>{item.title}</Text>)}
+                {history.map(item => <Text key={item.title}>{item.title}</Text>)}
             </>
         </ContentSection>
     )

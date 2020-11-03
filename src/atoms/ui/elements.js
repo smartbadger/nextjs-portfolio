@@ -10,3 +10,11 @@ export const Button = styled(Bttn)``
 export const Link = styled(Lnk)``
 export const Image = styled(Img)``
 export const Card = styled(Cd )``
+
+export const BackgroundGradient = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    flex: 0;
+    background: linear-gradient(${props => props.deg || '45'}deg, ${props => props.theme.colors[props.startColor] || props.startColor}, ${props => props.theme.colors[props.endColor] || props.endColor});
+`

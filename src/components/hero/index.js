@@ -1,12 +1,14 @@
 import ContentSection from "components/content-section";
-import { Heading, Image, Flex, Box, Button, Text } from "atoms/ui/elements";
+import { Heading, Image, Flex, Box, Button, Text, BackgroundGradient } from "atoms/ui/elements";
 const Hero = ({ title, subtitle, message, contact, image }) => {
   return (
     <ContentSection background="darkBlue">
       <Flex>
         <Box>
           <Heading as="h1" style={{textAlign: 'left'}}>{title}</Heading>
-          <Text>{subtitle}</Text>
+          <BackgroundGradient startColor="green" endColor="transparent">
+            <Text>{subtitle}</Text>
+          </BackgroundGradient>
           <Text>{message}</Text>
           <Button primary>{contact}</Button>
         </Box>
