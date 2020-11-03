@@ -1,5 +1,5 @@
 import ContentSection from "components/content-section";
-import { Heading, Image, Flex, Box, Button, Text } from "rebass/styled-components";
+import { Heading, Image, Flex, Box, Button, Text } from "atoms/ui/elements";
 import { FillerStyles, ContainerStyles, SkillItem, SkillTab} from "./styles";
 import { useState, useEffect } from "react";
 

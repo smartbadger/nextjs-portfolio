@@ -1,8 +1,8 @@
 import ContentSection from "components/content-section";
-import { Heading, Image, Flex, Box, Button, Text } from "rebass/styled-components";
+import { Heading, Image, Flex, Box, Button, Text } from "atoms/ui/elements";
 const Hero = ({ title, subtitle, message, contact, image }) => {
   return (
-    <ContentSection>
+    <ContentSection background="darkBlue">
       <Flex>
         <Box>
           <Heading as="h1">{title}</Heading>
