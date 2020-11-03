@@ -1,9 +1,22 @@
-import ContentSection from "components/content-section"
+import ContentSection from "components/content-section";
+import { Heading, Image, Flex, Box, Button, Text } from "rebass/styled-components";
+import { ExpItem } from "./styles";
+import { useState, useEffect } from "react";
 
-const Projects = () => {
+const Project = ({company, title, startdate, enddate}) => {
+    return (
+        <div>
+            <p>{title}</p>
+        </div>
+    )
+}
+const Projects = ({title, details, items}) => {
     return (
         <ContentSection>
-
+            <Heading>{title}</Heading>
+            <div>
+            {items.map(item => <Project {...item} />)}
+            </div>
         </ContentSection>
     )
 }

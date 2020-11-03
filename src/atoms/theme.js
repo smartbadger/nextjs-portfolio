@@ -19,8 +19,8 @@ export default
     ],
     fonts: {
       body: 'Montserrat, sans-serif',
-      heading: 'inherit',
-      monospace: 'Montserrat, monospace',
+      heading: 'Montserrat',
+      monospace: 'Montserrat',
     },
     fontWeights: {
       body: 400,

@@ -1,5 +1,5 @@
 import ContentSection from "components/content-section";
-import { Heading, Image, Flex, Box, Button, Text } from "rebass";
+import { Heading, Image, Flex, Box, Button, Text } from "rebass/styled-components";
 const Hero = ({ title, subtitle, message, contact, image }) => {
   return (
     <ContentSection>

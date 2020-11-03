@@ -1,9 +1,9 @@
 import ContentSection from "components/content-section"
 
-const Contact = () => {
+const Contact = ({title}) => {
     return (
         <ContentSection>
-
+            <p>{title}</p>
         </ContentSection>
     )
 }
