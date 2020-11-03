@@ -5,7 +5,7 @@ const Hero = ({ title, subtitle, message, contact, image }) => {
     <ContentSection background="darkBlue">
       <Flex>
         <Box>
-          <Heading as="h1">{title}</Heading>
+          <Heading as="h1" style={{textAlign: 'left'}}>{title}</Heading>
           <Text>{subtitle}</Text>
           <Text>{message}</Text>
           <Button primary>{contact}</Button>

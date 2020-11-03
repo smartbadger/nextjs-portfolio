@@ -3,7 +3,9 @@ import { Box as Bx, Flex as F, Text as T, Heading as H, Button as Bttn, Link as 
 export const Box = styled(Bx)``
 export const Flex = styled(F)``
 export const Text = styled(T)``
-export const Heading = styled(H)``
+export const Heading = styled(H)`
+    text-align: center;
+`
 export const Button = styled(Bttn)``
 export const Link = styled(Lnk)``
 export const Image = styled(Img)``

@@ -8,7 +8,8 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   position: relative;
   margin: 2rem 0;
-  z-index: 10;
+  z-index: 5;
+  width: 100%;
 
 `;
 export const Background = styled.div`

@@ -11,12 +11,12 @@ const Index = () => {
 
   return (
     <PageWrapper>
-      <Hero {...getContent("hero")} />
-      <Skills {...getContent("skills")} />
-      <Experience {...getContent("experience")} />
-      <Projects {...getContent("projects")} />
-      <Certs {...getContent("certifications")} />
-      <Contact {...getContent("contact")}/>
+      <Hero {...getContent("hero")} background="darkBlue" />
+      <Skills {...getContent("skills")} background="lightGray"/>
+      <Experience {...getContent("experience")} background="darkBlue"/>
+      <Projects {...getContent("projects")} background="lightGray"/>
+      <Certs {...getContent("certifications")} background="white"/>
+      <Contact {...getContent("contact")} background="lightGray"/>
     </PageWrapper>
   );
 };
