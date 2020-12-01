@@ -1,4 +1,3 @@
-import ContentSection from "components/content-section";
 import { Heading, Image, Flex, Box, Button, Text } from "atoms/ui/elements";
 import { FillerStyles, ContainerStyles, SkillItem, SkillTab} from "./styles";
 import { useState, useEffect } from "react";
@@ -39,11 +38,11 @@ const Skills = ({ title, skills }) => {
   const [category, setCategory] = useState(skills[0].category);
   const SkillGroup = buildSkillGroups(skills);
   return (
-    <ContentSection>
+    <>
       <Heading>{title}</Heading>
       <CategoryTabs active={category} categories={Object.keys(SkillGroup)} />
       <div>{SkillGroup[category]}</div>
-    </ContentSection>
+    </>
   );
 };
 

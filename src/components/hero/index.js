@@ -1,8 +1,7 @@
-import ContentSection from "components/content-section";
 import { Heading, Image, Flex, Box, Button, Text, BackgroundGradient } from "atoms/ui/elements";
 const Hero = ({ title, subtitle, message, contact, image }) => {
   return (
-    <ContentSection background="darkBlue">
+    <>
       <Flex>
         <Box>
           <Heading as="h1" style={{textAlign: 'left'}}>{title}</Heading>
@@ -16,7 +15,7 @@ const Hero = ({ title, subtitle, message, contact, image }) => {
           <Image src={image} />
         </Box>
       </Flex>
-    </ContentSection>
+    </>
   );
 };
 

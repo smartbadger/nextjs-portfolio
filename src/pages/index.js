@@ -1,3 +1,4 @@
+import ContentSection from "components/content-section";
 import Hero from "components/hero";
 import Skills from "components/skills";
 import Experience from "components/experience";
@@ -8,15 +9,26 @@ import { PageWrapper } from "atoms/ui/layout";
 import { getContent } from "context/language";
 
 const Index = () => {
-
   return (
     <PageWrapper>
-      <Hero {...getContent("hero")} background="darkBlue" />
-      <Skills {...getContent("skills")} background="lightGray"/>
-      <Experience {...getContent("experience")} background="darkBlue"/>
-      <Projects {...getContent("projects")} background="lightGray"/>
-      <Certs {...getContent("certifications")} background="white"/>
-      <Contact {...getContent("contact")} background="lightGray"/>
+      <ContentSection background="darkBlue">
+        <Hero {...getContent("hero")} textColor="white"/>
+      </ContentSection>
+      <ContentSection background="lightGray">
+        <Skills {...getContent("skills")} />
+      </ContentSection>
+      <ContentSection background="darkBlue">
+        <Experience {...getContent("experience")} textColor="white" />
+      </ContentSection>
+      <ContentSection background="lightGray">
+        <Projects {...getContent("projects")} />
+      </ContentSection>
+      <ContentSection background="white">
+        <Certs {...getContent("certifications")} />
+      </ContentSection>
+      <ContentSection background="lightGray">
+        <Contact {...getContent("contact")} />
+      </ContentSection>
     </PageWrapper>
   );
 };
