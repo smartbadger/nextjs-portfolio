@@ -39,6 +39,10 @@ export default
     variants: {
     },
     text: {
+      colors: {
+        dark: 'white',
+        light: 'black'
+      }
     },
     buttons: {
       primary: {

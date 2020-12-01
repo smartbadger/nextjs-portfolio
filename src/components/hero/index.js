@@ -2,16 +2,16 @@ import { Heading, Image, Flex, Box, Button, Text, BackgroundGradient } from "ato
 const Hero = ({ title, subtitle, message, contact, image }) => {
   return (
     <>
-      <Flex>
-        <Box>
-          <Heading as="h1" style={{textAlign: 'left'}}>{title}</Heading>
-          <BackgroundGradient startColor="green" endColor="transparent">
-            <Text>{subtitle}</Text>
+      <Flex mx={-2}>
+        <Box width={1/2} px={2}>
+          <Heading bg='dark' as="h1" style={{textAlign: 'left'}}>{title}</Heading>
+          <BackgroundGradient startColor="green" endColor="transparent" style={{marginBottom: '15px'}}>
+            <Text bg='dark'>{subtitle}</Text>
           </BackgroundGradient>
-          <Text>{message}</Text>
-          <Button primary>{contact}</Button>
+          <Text mb={'15px'} bg='dark'>{message}</Text>
+          <Button mb={'15px'} primary>{contact}</Button>
         </Box>
-        <Box>
+        <Box width={1/3} px={2} >
           <Image src={image} />
         </Box>
       </Flex>
