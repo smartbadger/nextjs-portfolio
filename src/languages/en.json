@@ -198,7 +198,7 @@
                 "lvl": 0.4
             },
             {
-                "skill": "Pug / Handlebars",
+                "skill": "Pug/Handlebars",
                 "category": "FrontEnd",
                 "image": {
                     "srcSet": [
@@ -207,7 +207,7 @@
                         {"src": "./icons/pug/pug.webp", "type": "image/webp"}
                     ],
                     "fallback": "./icons/pug/pug.svg",
-                    "alt": "Pug / Handlebars Icon"
+                    "alt": "Pug/Handlebars Icon"
                 },
                 "lvl": 0.35
             },
