@@ -1,5 +1,6 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 import LazyLoad from "react-lazyload";
+import {useState, useRef} from 'react';
 
 const ImageWrapper = styled.div`
   position: relative;
@@ -29,10 +30,40 @@ const Placeholder = styled.div`
   animation: ${loadingAnimation} 1s infinite;
 `;
 
+const MissingImage = styled.div`
+  display: ${(props) => (props.broken ? "block" : "none")};
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  border: 2px dotted rgb(200, 200, 200);
+  height: 90%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  
+  &::after {
+    content: "Broken image of ${props => props.alt || "something..."}";
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5x;
+    height: 100%;
+  }
+`;
 const ImgWithFallback = ({ srcSet, fallback, ...delegated }) => {
   return (
     <picture>
-      {srcSet.map(({src, type}) => <source key={src} srcSet={src} type={type} />)}
+      {srcSet.map(({ src, type }) => (
+        <source key={src} srcSet={src} type={type} />
+      ))}
       <img src={fallback} {...delegated} />
     </picture>
   );
@@ -47,22 +78,26 @@ const StyledImage = styled(ImgWithFallback)`
   object-fit: contain;
 `;
 
-
-
 const LazyImage = ({ srcSet, fallback, alt }) => {
-  const refPlaceholder = React.useRef();
+  const [broken, setBroken] = useState(false)
+  const refPlaceholder = useRef();
 
   const removePlaceholder = () => {
     refPlaceholder.current.remove();
+  };
+  const addBrokenImage = () => {
+    removePlaceholder()
+    setBroken(true)
   };
 
   return (
     <ImageWrapper>
       <Placeholder ref={refPlaceholder} />
+      <MissingImage broken={broken} alt={alt}/>
       <LazyLoad>
         <StyledImage
           onLoad={removePlaceholder}
-          onError={removePlaceholder}
+          onError={addBrokenImage}
           srcSet={srcSet}
           fallback={fallback}
           alt={alt}
