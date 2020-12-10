@@ -8,6 +8,7 @@ export default
         lightGray: '#f2f5fe',
         statusGray: '#e6e6e6',
         disabled: '#757575',
+        textGray:'#d4d2d2',
         blue: '#1f62e1',
         darkBlue: '#112540',
         black: '#12181c',
@@ -16,7 +17,8 @@ export default
         primary: 'blue',
         secondary: 'lightGray',
         green: '#0b4a5b',
-        statusGreen: '#5cb85c'
+        statusGreen: '#5cb85c',
+        teal: '#269e9a'
     },
     space: [
       0, 4, 8, 16, 32, 64, 128, 256

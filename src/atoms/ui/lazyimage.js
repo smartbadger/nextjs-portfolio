@@ -61,9 +61,9 @@ const MissingImage = styled.div`
 const ImgWithFallback = ({ srcSet, fallback, ...delegated }) => {
   return (
     <picture>
-      {srcSet.map(({ src, type }) => (
+      {srcSet && srcSet.length ? srcSet.map(({ src, type }) => (
         <source key={src} srcSet={src} type={type} />
-      ))}
+      )): null}
       <img src={fallback} {...delegated} />
     </picture>
   );
