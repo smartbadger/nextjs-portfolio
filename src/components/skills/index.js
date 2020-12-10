@@ -1,6 +1,6 @@
-import { Heading, Image, Flex, Box, Button, Text, Grid, Card } from "atoms/ui/elements";
+import { Heading, Flex, Grid, Card } from "atoms/ui/elements";
 import LazyImage from 'atoms/ui/lazyimage'
-import { FillerStyles, ContainerStyles, SkillItem, SkillTab, SkillText} from "./styles";
+import { FillerStyles, ContainerStyles, SkillItem, SkillTab, SkillText, SkillName} from "./styles";
 import { useState, useEffect } from "react";
 
 const getSkillLevel = (value) => {
@@ -31,7 +31,7 @@ const CreateSkill = ({ skill, category, image, lvl }) => {
       <Card>
         <Flex flexDirection="column" alignItems="center" justify="center">
           <LazyImage {...image} />
-          <Text>{skill}</Text>
+          <SkillName>{skill}</SkillName>
           <SkillLevel value={lvl} />
         </Flex>
       </Card>

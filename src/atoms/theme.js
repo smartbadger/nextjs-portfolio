@@ -6,6 +6,7 @@ export default
     ],
     colors: {
         lightGray: '#f2f5fe',
+        statusGray: '#e6e6e6',
         blue: '#1f62e1',
         darkBlue: '#112540',
         black: '#12181c',
