@@ -1,21 +1,40 @@
-import { Heading, Image, Flex, Box, Button, Text } from "atoms/ui/elements";
-import { FillerStyles, ContainerStyles, SkillItem, SkillTab} from "./styles";
+import { Heading, Image, Flex, Box, Button, Text, Grid, Card } from "atoms/ui/elements";
+import LazyImage from 'atoms/ui/lazyimage'
+import { FillerStyles, ContainerStyles, SkillItem, SkillTab, SkillText} from "./styles";
 import { useState, useEffect } from "react";
 
+const getSkillLevel = (value) => {
+  switch(true) {
+    case value >= 0.7:
+      return 'expert'
+      break;
+    case value < 0.7 && value >= 0.5:
+      return 'intermediate'
+    default:
+      return 'beginner'
+  }
+}
 const SkillLevel = ({ value }) => {
   return (
-    <ContainerStyles>
-      <FillerStyles value={value} fillColor={"green"} />
-    </ContainerStyles>
+    <>
+      <SkillText>{getSkillLevel(value)}</SkillText>
+      <ContainerStyles>
+        <FillerStyles value={value} />
+      </ContainerStyles>
+    </>
   );
 };
 
 const CreateSkill = ({ skill, category, image, lvl }) => {
   return (
     <SkillItem data-category={category}>
-      <Image src={image} alt={skill} />
-      <Text>{skill}</Text>
-      <SkillLevel value={lvl} />
+      <Card>
+        <Flex flexDirection="column" alignItems="center" justify="center">
+          <LazyImage {...image} />
+          <Text>{skill}</Text>
+          <SkillLevel value={lvl} />
+        </Flex>
+      </Card>
     </SkillItem>
   );
 };
@@ -41,7 +60,7 @@ const Skills = ({ title, skills }) => {
     <>
       <Heading>{title}</Heading>
       <CategoryTabs active={category} categories={Object.keys(SkillGroup)} />
-      <div>{SkillGroup[category]}</div>
+      <Grid>{SkillGroup[category]}</Grid>
     </>
   );
 };

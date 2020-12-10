@@ -1,10 +1,11 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import LazyLoad from "react-lazyload";
 
 const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 50vw;
+  height: 0;
+  padding-top: 100%;
 `;
 
 const loadingAnimation = keyframes`
@@ -28,11 +29,10 @@ const Placeholder = styled.div`
   animation: ${loadingAnimation} 1s infinite;
 `;
 
-
 const ImgWithFallback = ({ srcSet, fallback, ...delegated }) => {
   return (
     <picture>
-      {...srcSet.map(({src, type}) => <source srcSet={src} type={type} />)}
+      {srcSet.map(({src, type}) => <source key={src} srcSet={src} type={type} />)}
       <img src={fallback} {...delegated} />
     </picture>
   );
@@ -41,10 +41,13 @@ const ImgWithFallback = ({ srcSet, fallback, ...delegated }) => {
 const StyledImage = styled(ImgWithFallback)`
   position: absolute;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 `;
+
+
 
 const LazyImage = ({ srcSet, fallback, alt }) => {
   const refPlaceholder = React.useRef();

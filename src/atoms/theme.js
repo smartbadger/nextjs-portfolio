@@ -13,7 +13,8 @@ export default
         text: 'black',
         primary: 'blue',
         secondary: 'lightGray',
-        green: '#0b4a5b'
+        green: '#0b4a5b',
+        statusGreen: '#5cb85c'
     },
     space: [
       0, 4, 8, 16, 32, 64, 128, 256
