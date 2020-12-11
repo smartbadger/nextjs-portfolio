@@ -23,7 +23,7 @@ const Experience = ({ title, history }) => {
         <Box width={1 / 2} px={2}>
           <LazyImage
             alt="man at desk"
-            fallback="/images/dude-at-computer.svg"
+            fallback="/images/dude-at-computer.png"
           />
         </Box>
         <Box width={1 / 2} px={2}>

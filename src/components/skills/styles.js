@@ -49,5 +49,5 @@ export const SkillTabsContainer = styled(Box)`
     flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    margin-bottom: 3rem;
 `

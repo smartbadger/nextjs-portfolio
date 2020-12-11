@@ -9,6 +9,7 @@ export const Text = styled(T)`
 `
 export const Heading = styled(H)`
     text-align: center;
+    margin-bottom: 3rem;
     
     color: ${ props => props.bg === 'dark' ? props.theme.text.colors['dark'] : props.theme.text.colors['light']};
 `

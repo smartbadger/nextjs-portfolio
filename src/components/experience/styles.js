@@ -28,11 +28,11 @@ export const Explink = styled.li`
         &::after {
             content: "";
             width: .25rem;
-            height: 100%;
+            height: 105%;
             background-color: ${props => props.theme.colors.teal};
             display: block;
             position: absolute;
-            top: 1.5rem;
+            top: 1.4rem;
             left: .35rem;
             
         }
@@ -40,6 +40,8 @@ export const Explink = styled.li`
 `;
 export const Explist = styled.ul`
   list-style: none;
+  margin-top: 3rem;
+
 `;
 export const ExpDetails = styled(Text)`
     font-size: .9rem;
