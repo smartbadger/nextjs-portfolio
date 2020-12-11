@@ -1,9 +1,11 @@
 import styled from "styled-components";
-import { Text, Box } from "atoms/ui/elements";
+import { Text, Box, Grid } from "atoms/ui/elements";
 
-export const SkillItem = styled.div``;
+export const SkillItem = styled.div`
+  display: none;
+`;
 
-export const SkillTab = styled(Text)`
+export const SkillTab = styled.li`
   font-weight: ${(props) => (props.active ? "bold" : "normal")};
   color: ${(props) => (props.active ? props.theme.colors.blue : props.theme.colors.black )};
   border-bottom: 2px solid ${(props) => (props.active ? props.theme.colors.blue : props.theme.colors.disabled )};
@@ -44,10 +46,18 @@ export const SkillName = styled(Text)`
     font-weight: bold;
     letter-spacing: 1px;
 `
-export const SkillTabsContainer = styled(Box)`
+export const SkillTabsContainer = styled.ul`
     display: flex;
     flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    list-style: none;
+    padding: 0;
+`
+
+export const SkillsGrid = styled(Grid)`
+  &[data-active-category="${props => props.dac}"] > ${SkillItem}[data-category="${props => props.dac}"] {
+    display: block;
+  }
 `

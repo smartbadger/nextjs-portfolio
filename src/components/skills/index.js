@@ -1,4 +1,4 @@
-import { Heading, Flex, Grid, Card } from "atoms/ui/elements";
+import { Heading, Flex, Card } from "atoms/ui/elements";
 import LazyImage from "atoms/ui/lazyimage";
 import {
   FillerStyles,
@@ -8,6 +8,7 @@ import {
   SkillText,
   SkillName,
   SkillTabsContainer,
+  SkillsGrid
 } from "./styles";
 import { useState, useEffect } from "react";
 
@@ -49,31 +50,23 @@ const Skills = ({ title, skills }) => {
     );
   };
 
-  const buildSkillGroups = (skills) => {
-    const group = {};
-    skills.forEach((skillObj, index) => {
-      const { category } = skillObj;
-      if (!group[category] || !group[category].length) {
-        group[category] = [];
-      }
-      group[category].push(
-        <CreateSkill {...skillObj} key={`skill-${index}`} />
-      );
-    });
-    return group;
-  };
   const changeSkill = ({ target }) => {
     if (target) {
-      setCategory(target.dataset.category)
+      setCategory(target.dataset.category);
     }
   };
+  
+  const onlyUnique = (value, index, self) => {
+    return self.indexOf(value) === index;
+  }
+
 
   const CategoryTabs = ({ categories, active }) => (
     <SkillTabsContainer>
       {categories.map((c) => (
         <SkillTab
           key={`skilltab__${c}`}
-          active={c == active}
+          data-active-category={c == active}
           data-category={c}
           onClick={changeSkill}
         >
@@ -82,14 +75,20 @@ const Skills = ({ title, skills }) => {
       ))}
     </SkillTabsContainer>
   );
-  const SkillGroup = buildSkillGroups(skills);
-
+  const catagories = skills.map(el => el.category).filter(onlyUnique)
 
   return (
     <>
       <Heading>{title}</Heading>
-      <CategoryTabs active={category} categories={Object.keys(SkillGroup)} />
-      <Grid>{SkillGroup[category]}</Grid>
+      <CategoryTabs
+        data-active-category={category}
+        categories={catagories}
+      />
+      <SkillsGrid data-active-category={category} dac={category}>
+        { 
+          skills.map((skillObj, index) => <CreateSkill {...skillObj} key={`skill-${index}`} />)
+        }
+      </SkillsGrid>
     </>
   );
 };
