@@ -212,6 +212,20 @@
                 "lvl": 0.35
             },
             {
+                "skill": "Shopify",
+                "category": "FrontEnd",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/shopify/shopify.jxr", "type": "image/jxr"},
+                        {"src": "./icons/shopify/shopify.jpf", "type": "image/jpf"},
+                        {"src": "./icons/shopify/shopify.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/shopify/shopify.svg",
+                    "alt": "Shopify Icon"
+                },
+                "lvl": 0.35
+            },
+            {
                 "skill": "Webpack",
                 "category": "DevOps",
                 "image": {
@@ -321,6 +335,33 @@
                 "title": "Shopify Orders Map",
                 "subtitle": "Map that displays order history",
                 "tag": "Great Leaps LLC / Gainsville, FL / 2019",
+                "details": ""
+            },
+            {
+                "icon": "",
+                "title": "Le Poem Cast",
+                "subtitle": "Project for Final",
+                "tag": "",
+                "details": ""
+            },
+            {
+                "icon": "",
+                "title": "Shopify React Customizer",
+                "subtitle": "",
+                "tag": "",
+                "details": ""
+            },
+            {
+                "icon": "",
+                "title": "Banking App",
+                "subtitle": "",
+                "tag": "",
+                "details": ""
+            },{
+                "icon": "",
+                "title": "PopSockets Customizer",
+                "subtitle": "",
+                "tag": "",
                 "details": ""
             }
         ]
