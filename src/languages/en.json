@@ -17,7 +17,7 @@
         "skills": [
             {
                 "skill": "Python",
-                "category": "Backend",
+                "catagory": "Backend",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/python/python.jxr", "type": "image/jxr"},
@@ -31,7 +31,7 @@
             },
             {
                 "skill": "Mongo DB",
-                "category": "Backend",
+                "catagory": "Backend",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/mongodb/mongodb.jxr", "type": "image/jxr"},
@@ -45,7 +45,7 @@
             },
             {
                 "skill": "Postgres",
-                "category": "Backend",
+                "catagory": "Backend",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/postgre/postgre.jxr", "type": "image/jxr"},
@@ -59,7 +59,7 @@
             },
             {
                 "skill": "MySQL",
-                "category": "Backend",
+                "catagory": "Backend",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/mysql/mysql.jxr", "type": "image/jxr"},
@@ -73,7 +73,7 @@
             },
             {
                 "skill": "Ruby",
-                "category": "Backend",
+                "catagory": "Backend",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/ruby/ruby.jxr", "type": "image/jxr"},
@@ -87,7 +87,7 @@
             },
             {
                 "skill": "ReactJS",
-                "category": "FrontEnd",
+                "catagory": "FrontEnd",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/reactjs/reactjs.jxr", "type": "image/jxr"},
@@ -101,7 +101,7 @@
             },
             {
                 "skill": "Javascript",
-                "category": "FrontEnd",
+                "catagory": "FrontEnd",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/javascript/javascript.jxr", "type": "image/jxr"},
@@ -115,7 +115,7 @@
             },
             {
                 "skill": "NextJS",
-                "category": "FrontEnd",
+                "catagory": "FrontEnd",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/nextjs/nextjs.jxr", "type": "image/jxr"},
@@ -129,7 +129,7 @@
             },
             {
                 "skill": "FaunaDB",
-                "category": "Backend",
+                "catagory": "Backend",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/fauna/fauna.jxr", "type": "image/jxr"},
@@ -143,7 +143,7 @@
             },
             {
                 "skill": "NodeJS",
-                "category": "Backend",
+                "catagory": "Backend",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/nodejs/nodejs.jxr", "type": "image/jxr"},
@@ -157,7 +157,7 @@
             },
             {
                 "skill": "SCSS/CSS",
-                "category": "FrontEnd",
+                "catagory": "FrontEnd",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/scss-css/scss-css.jxr", "type": "image/jxr"},
@@ -171,7 +171,7 @@
             },
             {
                 "skill": "Cypress",
-                "category": "DevOps",
+                "catagory": "DevOps",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/cypress/cypress.jxr", "type": "image/jxr"},
@@ -185,7 +185,7 @@
             },
             {
                 "skill": "Jest",
-                "category": "DevOps",
+                "catagory": "DevOps",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/jest/jest.jxr", "type": "image/jxr"},
@@ -199,7 +199,7 @@
             },
             {
                 "skill": "Pug/Handlebars",
-                "category": "FrontEnd",
+                "catagory": "FrontEnd",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/pug/pug.jxr", "type": "image/jxr"},
@@ -213,7 +213,7 @@
             },
             {
                 "skill": "Shopify",
-                "category": "FrontEnd",
+                "catagory": "FrontEnd",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/shopify/shopify.jxr", "type": "image/jxr"},
@@ -227,7 +227,7 @@
             },
             {
                 "skill": "Webpack",
-                "category": "DevOps",
+                "catagory": "DevOps",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
@@ -241,7 +241,7 @@
             },
             {
                 "skill": "Gulp",
-                "category": "DevOps",
+                "catagory": "DevOps",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/gulp/gulp.jxr", "type": "image/jxr"},
@@ -255,7 +255,7 @@
             },
             {
                 "skill": "Babel",
-                "category": "DevOps",
+                "catagory": "DevOps",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/babel/babel.jxr", "type": "image/jxr"},
@@ -269,7 +269,7 @@
             },
             {
                 "skill": "Docker",
-                "category": "DevOps",
+                "catagory": "DevOps",
                 "image": {
                     "srcSet": [
                         {"src": "./icons/docker/docker.jxr", "type": "image/jxr"},

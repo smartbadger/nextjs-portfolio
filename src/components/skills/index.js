@@ -13,7 +13,7 @@ import {
 import { useState, useEffect } from "react";
 
 const Skills = ({ title, skills }) => {
-  const [category, setCategory] = useState(skills[0].category);
+  const [catagory, setCatagory] = useState(skills[0].catagory);
   const getSkillLevel = (value) => {
     switch (true) {
       case value >= 0.7:
@@ -36,9 +36,9 @@ const Skills = ({ title, skills }) => {
     );
   };
 
-  const CreateSkill = ({ skill, category, image, lvl }) => {
+  const CreateSkill = ({ skill, catagory, image, lvl }) => {
     return (
-      <SkillItem data-category={category}>
+      <SkillItem data-catagory={catagory}>
         <Card>
           <Flex flexDirection="column" alignItems="center" justify="center">
             <LazyImage {...image} />
@@ -52,7 +52,7 @@ const Skills = ({ title, skills }) => {
 
   const changeSkill = ({ target }) => {
     if (target) {
-      setCategory(target.dataset.category);
+      setCatagory(target.dataset.catagory);
     }
   };
   
@@ -61,13 +61,13 @@ const Skills = ({ title, skills }) => {
   }
 
 
-  const CategoryTabs = ({ categories, active }) => (
+  const CatagoryTabs = ({ catagories, active }) => (
     <SkillTabsContainer>
-      {categories.map((c) => (
+      {catagories.map((c) => (
         <SkillTab
           key={`skilltab__${c}`}
-          data-active-category={c == active}
-          data-category={c}
+          data-active-catagory={c == active}
+          data-catagory={c}
           onClick={changeSkill}
         >
           {c}
@@ -75,16 +75,16 @@ const Skills = ({ title, skills }) => {
       ))}
     </SkillTabsContainer>
   );
-  const catagories = skills.map(el => el.category).filter(onlyUnique)
+  const catagories = skills.map(el => el.catagory).filter(onlyUnique)
 
   return (
     <>
       <Heading>{title}</Heading>
-      <CategoryTabs
-        data-active-category={category}
-        categories={catagories}
+      <CatagoryTabs
+        data-active-catagory={catagory}
+        catagories={catagories}
       />
-      <SkillsGrid data-active-category={category} dac={category}>
+      <SkillsGrid data-active-catagory={catagory} catagories={catagories}>
         { 
           skills.map((skillObj, index) => <CreateSkill {...skillObj} key={`skill-${index}`} />)
         }
