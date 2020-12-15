@@ -320,11 +320,11 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./images/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/statify.jpf", "type": "image/jpf"},
+                        {"src": "./images/statify.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./images/temp.png",
-                    "alt": "Webpack Icon"
+                    "fallback": "./images/statify.png",
+                    "alt": "Statify logo"
                 },
                 "title": "Statify",
                 "subtitle": "Shopify SaaS Application",
@@ -334,11 +334,11 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./images/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/crypto-fill.jpf", "type": "image/jpf"},
+                        {"src": "./images/crypto-fill.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./images/temp.png",
-                    "alt": "Webpack Icon"
+                    "fallback": "./images/crypto-fill.png",
+                    "alt": "crypto-fill Icon"
                 },
                 "title": "Cryptofill",
                 "subtitle": "UI Prototype",
@@ -376,11 +376,11 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./images/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/sounds-to-sights.jpf", "type": "image/jpf"},
+                        {"src": "./images/sounds-to-sights.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./images/temp.png",
-                    "alt": "Webpack Icon"
+                    "fallback": "./images/sounds-to-sights.png",
+                    "alt": "sounds-to-sights Icon"
                 },
                 "title": "Shopify Customizer",
                 "subtitle": "SoundsToSights LLC",
@@ -404,12 +404,11 @@
             },{
                 "image": {
                     "srcSet": [
-                        {"src": "./images/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./images/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/logo-popsockets.jpf", "type": "image/jpf"},
+                        {"src": "./images/logo-popsockets.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./images/temp.png",
-                    "alt": "Webpack Icon"
+                    "fallback": "./images/logo-popsockets.png",
+                    "alt": "Popsockets logo"
                 },
                 "title": "Product Customizer",
                 "subtitle": "PopSockets LLC",
