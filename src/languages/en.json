@@ -320,11 +320,10 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./images/webpack.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./icons/webpack/webpack.svg",
+                    "fallback": "./images/temp.png",
                     "alt": "Webpack Icon"
                 },
                 "title": "Statify",
@@ -335,11 +334,10 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./images/webpack.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./icons/webpack/webpack.svg",
+                    "fallback": "./images/temp.png",
                     "alt": "Webpack Icon"
                 },
                 "title": "Cryptofill",
@@ -350,12 +348,11 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/shopify-orders-map.jpf", "type": "image/jpf"},
+                        {"src": "./images/shopify-orders-map.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./icons/webpack/webpack.svg",
-                    "alt": "Webpack Icon"
+                    "fallback": "./images/shopify-orders-map.webp",
+                    "alt": "Custom map integration with shopify"
                 },
                 "title": "Shopify Orders Map",
                 "subtitle": "GreatLeaps LLC",
@@ -365,12 +362,11 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/le-poemcast-lp.jpf", "type": "image/jpf"},
+                        {"src": "./images/le-poemcast-lp.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./icons/webpack/webpack.svg",
-                    "alt": "Webpack Icon"
+                    "fallback": "./images/le-poemcast-lp.png",
+                    "alt": "le-poemcast-lp Icon"
                 },
                 "title": "Le Poem Cast",
                 "subtitle": "FinalStraw LLC",
@@ -380,11 +376,10 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./images/webpack.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./icons/webpack/webpack.svg",
+                    "fallback": "./images/temp.png",
                     "alt": "Webpack Icon"
                 },
                 "title": "Shopify Customizer",
@@ -395,11 +390,11 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./images/webpack.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./icons/webpack/webpack.svg",
+                    "fallback": "./images/temp.png",
                     "alt": "Webpack Icon"
                 },
                 "title": "Banking App",
@@ -409,11 +404,11 @@
             },{
                 "image": {
                     "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./images/webpack.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./icons/webpack/webpack.svg",
+                    "fallback": "./images/temp.png",
                     "alt": "Webpack Icon"
                 },
                 "title": "Product Customizer",

@@ -26,5 +26,6 @@ export const DetailsContainer  = styled.div`
 export const CardItem  = styled(Card)`
     position: relative; 
     overflow: hidden;
+    padding: 0;
     z-index: 1;
 `
