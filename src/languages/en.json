@@ -1,6 +1,7 @@
 {
     "meta": {
-        "copyright": "Connor Bailes ©2020. All rights reserved."
+        "copyright": "Connor Bailes ©2020. All rights reserved.",
+        "title": "Hi, I'm Connor"
     },
     "nav": {
         "socialbar": "Follow me"
@@ -209,7 +210,7 @@
                     "fallback": "./icons/pug/pug.svg",
                     "alt": "Pug/Handlebars Icon"
                 },
-                "lvl": 0.35
+                "lvl": 0.45
             },
             {
                 "skill": "Shopify",
@@ -223,7 +224,7 @@
                     "fallback": "./icons/shopify/shopify.svg",
                     "alt": "Shopify Icon"
                 },
-                "lvl": 0.35
+                "lvl": 0.85
             },
             {
                 "skill": "Webpack",
@@ -317,50 +318,106 @@
         "details": "More Details",
         "items": [
             {
-                "icon": "",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/webpack/webpack.svg",
+                    "alt": "Webpack Icon"
+                },
                 "title": "Statify",
                 "subtitle": "Shopify SaaS Application",
                 "tag": "Personal Project / Denver, CO / 2019",
                 "details": ""
             },
             {
-                "icon": "",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/webpack/webpack.svg",
+                    "alt": "Webpack Icon"
+                },
                 "title": "Cryptofill",
                 "subtitle": "UI Prototype",
                 "tag": "Startup / Denver, CO / 2019",
                 "details": ""
             },
             {
-                "icon": "",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/webpack/webpack.svg",
+                    "alt": "Webpack Icon"
+                },
                 "title": "Shopify Orders Map",
-                "subtitle": "Map that displays order history",
+                "subtitle": "GreatLeaps LLC",
                 "tag": "Great Leaps LLC / Gainsville, FL / 2019",
                 "details": ""
             },
             {
-                "icon": "",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/webpack/webpack.svg",
+                    "alt": "Webpack Icon"
+                },
                 "title": "Le Poem Cast",
-                "subtitle": "Project for Final",
+                "subtitle": "FinalStraw LLC",
                 "tag": "",
                 "details": ""
             },
             {
-                "icon": "",
-                "title": "Shopify React Customizer",
-                "subtitle": "",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/webpack/webpack.svg",
+                    "alt": "Webpack Icon"
+                },
+                "title": "Shopify Customizer",
+                "subtitle": "SoundsToSights LLC",
                 "tag": "",
                 "details": ""
             },
             {
-                "icon": "",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/webpack/webpack.svg",
+                    "alt": "Webpack Icon"
+                },
                 "title": "Banking App",
-                "subtitle": "",
+                "subtitle": "WorthStreet LLC",
                 "tag": "",
                 "details": ""
             },{
-                "icon": "",
-                "title": "PopSockets Customizer",
-                "subtitle": "",
+                "image": {
+                    "srcSet": [
+                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
+                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
+                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
+                    ],
+                    "fallback": "./icons/webpack/webpack.svg",
+                    "alt": "Webpack Icon"
+                },
+                "title": "Product Customizer",
+                "subtitle": "PopSockets LLC",
                 "tag": "",
                 "details": ""
             }
