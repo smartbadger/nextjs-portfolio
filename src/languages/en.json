@@ -390,12 +390,11 @@
             {
                 "image": {
                     "srcSet": [
-                        {"src": "./images/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./images/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./images/webpack.webp", "type": "image/webp"}
+                        {"src": "./images/worth-street.jpf", "type": "image/jpf"},
+                        {"src": "./images/worth-street.webp", "type": "image/webp"}
                     ],
-                    "fallback": "./images/temp.png",
-                    "alt": "Webpack Icon"
+                    "fallback": "./images/worth-street.png",
+                    "alt": "banking app image"
                 },
                 "title": "Banking App",
                 "subtitle": "WorthStreet LLC",
