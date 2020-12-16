@@ -1,21 +1,25 @@
-import { Heading, Image, Flex, Box, Button, Text } from "atoms/ui/elements";
-import { ExpItem } from "./styles";
-import { useState, useEffect } from "react";
+import { Heading, Text, Box } from "atoms/ui/elements";
+import { ExpTitle, Explink, Explist, ExpDetails } from "./styles";
+import LazyImage from "atoms/ui/lazyimage";
+import moment from "moment";
 
-const CertItem = ({icon, subtitle, title, details, }) => {
+const CertItem = ({date, issuer, title }) => {
     return (
-        <div>
-            <Text>{title}</Text>
-        </div>
+        <Explink>
+            <ExpTitle>{title}</ExpTitle>
+            <ExpDetails>{issuer} | {moment(date).format('MMM YYYY')}</ExpDetails>
+        </Explink>
     )
 }
 const Cert = ({title, certs}) => {
     return (
         <>
             <Heading>{title}</Heading>
-            <div>
-            {certs.map(item => <CertItem key={`cert__${item.title}`} {...item} />)}
-            </div>
+
+            <Explist>
+                {certs.map(item => <CertItem key={`cert__${item.title}`} {...item} />)}
+            </Explist>
+
         </>
     )
 }
