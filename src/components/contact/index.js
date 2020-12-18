@@ -1,44 +1,53 @@
 import ContentSection from "components/content-section";
-
-const Contact = ({ title }) => {
+import { Label, Input, FormField } from "./styles";
+import { Card } from "atoms/ui/elements";
+const Contact = ({ title, subtitle }) => {
   const InputField = ({ id, label, ...delegates }) => {
     return (
-      <>
-        <label for={id}>{label}</label>
-        <input id={id} {...delegates} />
-      </>
+      <FormField>
+        <Label for={id}>{label}</Label>
+        <Input id={id} {...delegates} />
+      </FormField>
     );
   };
   return (
     <ContentSection>
-      <p>{title}</p>
-      <div>
-        
-        <form>
+      <Card>
+        <p>{title}</p>
+        <p>{subtitle}</p>
+        <div>
+          <form>
             <InputField
-            label="First Name"
-            name="firstName"
-            type="text"
-            id="firstName"
-            required
+              label="First Name"
+              name="firstName"
+              type="text"
+              id="firstName"
+              required
             />
             <InputField
-            label="Last Name"
-            name="lastName"
-            type="text"
-            id="lastName"
-            required
+              label="Last Name"
+              name="lastName"
+              type="text"
+              id="lastName"
+              required
             />
-            <InputField label="Email" name="email" type="email" id="email" required />
             <InputField
-            label="Message"
-            name="message"
-            type="text_field"
-            id="message"
-            required
+              label="Email"
+              name="email"
+              type="email"
+              id="email"
+              required
             />
-        </form>
-      </div>
+            <InputField
+              label="Message"
+              name="message"
+              type="text_field"
+              id="message"
+              required
+            />
+          </form>
+        </div>
+      </Card>
     </ContentSection>
   );
 };

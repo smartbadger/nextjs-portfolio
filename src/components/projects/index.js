@@ -1,5 +1,5 @@
-import { Heading, Grid } from "atoms/ui/elements";
-import { Title, SubTitle, Details, Link, CardItem, ImageBackground, DetailsContainer} from "./styles";
+import { Heading } from "atoms/ui/elements";
+import { Title, SubTitle, Details, Link, CardItem, ImageBackground, DetailsContainer, CardGrid} from "./styles";
 import LazyImage from "atoms/ui/lazyimage";
 
 const ProjectCard = ({image, children}) => {
@@ -27,9 +27,9 @@ const Projects = ({title, details, items}) => {
     return (
         <>
             <Heading>{title}</Heading>
-            <Grid>
+            <CardGrid>
             {items.map(item => <Project key={item.title} {...item} />)}
-            </Grid>
+            </CardGrid>
         </>
     )
 }

@@ -285,7 +285,7 @@
         ]
     },
     "experience": {
-        "title": "Work & Experience",
+        "title": "Employment & Experience",
         "history": [
             {
                 "company": "Yodi LLC",
@@ -314,7 +314,7 @@
         ]
     },
     "projects": {
-        "title": "My Recent Projects",
+        "title": "Works & Projects",
         "details": "More Details",
         "items": [
             {
