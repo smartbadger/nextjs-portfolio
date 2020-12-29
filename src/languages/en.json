@@ -329,7 +329,15 @@
                 "title": "Statify",
                 "subtitle": "Shopify SaaS Application",
                 "tag": "Personal Project / Denver, CO / 2019",
-                "details": ""
+                "blocks": [
+                {
+                    "title": "",
+                    "description": "",
+                    "media": {
+                        
+                    }
+                }
+            ]
             },
             {
                 "image": {
@@ -343,7 +351,15 @@
                 "title": "Cryptofill",
                 "subtitle": "UI Prototype",
                 "tag": "Startup / Denver, CO / 2019",
-                "details": ""
+                "blocks": [
+                {
+                    "title": "",
+                    "description": "",
+                    "media": {
+                        
+                    }
+                }
+            ]
             },
             {
                 "image": {
@@ -357,7 +373,15 @@
                 "title": "Shopify Orders Map",
                 "subtitle": "GreatLeaps LLC",
                 "tag": "Great Leaps LLC / Gainsville, FL / 2019",
-                "details": ""
+                "blocks": [
+                {
+                    "title": "",
+                    "description": "",
+                    "media": {
+                        
+                    }
+                }
+            ]
             },
             {
                 "image": {
@@ -371,7 +395,15 @@
                 "title": "Le Poem Cast",
                 "subtitle": "FinalStraw LLC",
                 "tag": "",
-                "details": ""
+                "blocks": [
+                {
+                    "title": "",
+                    "description": "",
+                    "media": {
+                        
+                    }
+                }
+            ]
             },
             {
                 "image": {
@@ -385,7 +417,15 @@
                 "title": "Shopify Customizer",
                 "subtitle": "SoundsToSights LLC",
                 "tag": "",
-                "details": ""
+                "blocks": [
+                {
+                    "title": "",
+                    "description": "",
+                    "media": {
+                        
+                    }
+                }
+            ]
             },
             {
                 "image": {
@@ -399,7 +439,15 @@
                 "title": "Banking App",
                 "subtitle": "WorthStreet LLC",
                 "tag": "",
-                "details": ""
+                "blocks": [
+                {
+                    "title": "",
+                    "description": "",
+                    "media": {
+                        
+                    }
+                }
+            ]
             },{
                 "image": {
                     "srcSet": [
@@ -412,7 +460,15 @@
                 "title": "Product Customizer",
                 "subtitle": "PopSockets LLC",
                 "tag": "",
-                "details": ""
+                "blocks": [
+                {
+                    "title": "",
+                    "description": "",
+                    "media": {
+                        
+                    }
+                }
+            ]
             }
         ]
     },

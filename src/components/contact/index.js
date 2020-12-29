@@ -28,7 +28,7 @@ const Contact = ({ title, subtitle }) => {
     return (
       <FormField inputType={type}>
         {labelIsPlaceholder != undefined ? null : (
-          <Label for={id}>{label}</Label>
+          <Label htmlFor={id}>{label}</Label>
         )}
         {type == "textarea" ? (
           <TextA {...componentProps} />

@@ -1,8 +1,10 @@
+import {Footer as Fel} from './styles';
+
 const Footer = ({copyright}) => {
     return (
-        <footer>
+        <Fel>
             <span>{copyright}</span>
-        </footer>
+        </Fel>
     )
 }
 
