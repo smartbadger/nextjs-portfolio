@@ -1,34 +1,26 @@
 import { createPortal } from "react-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ModalContext } from "context/modal";
+import { ModalWrapper, ModalRootEl } from './styles'
 
 export const Modal = () => {
-  let { modalContent, handleModal, modal } = useContext(ModalContext);
+  const { modalContent, handleModal, modal } = useContext(ModalContext);
+  
+
   if (modal) {
+    const domNode = document.querySelector("#modal-root");
     return createPortal(
-      <div
-        className="fixed top-0 left-0 h-screen w-full flex items-center justify-center"
-        style={{ background: "rgba(0,0,0,0.8)" }}
-      >
-        <div className="bg-white relative p-5 shadow-lg rounded flex flex-col items-start text-lg text-gray-800">
-          <button
-            className="absolute top-0 right-0 -mt-12 font-bold self-end rounded-full bg-red-200 mb-3 bg-white text-red-700 w-8 h-8"
-            onClick={() => handleModal()}
-          >
-              sd
-          </button>
-          <p>{modalContent}</p>
-        </div>
-      </div>,
-      document.querySelector("#modal-root")
+      <ModalComponent handleModal={handleModal}>
+          {modalContent}
+      </ModalComponent>,
+      domNode
     );
   } else return null;
 };
 
-
 export const useModal = () => {
-  let [modal, setModal] = React.useState(false);
-  let [modalContent, setModalContent] = React.useState("I'm the Modal Content");
+  let [modal, setModal] = useState(false);
+  let [modalContent, setModalContent] = useState(null);
 
   let handleModal = (content = false) => {
     setModal(!modal);
@@ -39,3 +31,13 @@ export const useModal = () => {
 
   return { modal, handleModal, modalContent };
 };
+
+const ModalComponent = ({children, handleModal}) => {
+    return (
+        <ModalWrapper>
+            {children}
+        </ModalWrapper>
+    )
+}
+
+export const ModalRoot = () => (<ModalRootEl id="modal-root" />)

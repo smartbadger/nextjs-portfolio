@@ -1,9 +1,7 @@
 import { createContext } from "react";
-import {useModal, Modal} from 'components/modal'
+import {useModal, Modal, ModalRoot} from 'components/modal'
 // create the language context with default selected language
-export const ModalContext = createContext({
-  visible: false
-});
+export const ModalContext = createContext();
 
 
 // it provides the language context to app
@@ -12,18 +10,9 @@ export const ModalProvider = ({ children }) => {
 
   return (
     <ModalContext.Provider value={provider}>
-        <Modal />
         {children}
+        <Modal/>
+        <ModalRoot id="modal-root" />
     </ModalContext.Provider>
   );
 };
-
-
-
-export const ModalRoot = () => (
-    <ModalConsumer>
-      {({ component: Component, props, hideModal }) =>
-        Component ? <Component {...props} onRequestClose={hideModal} /> : null
-      }
-    </ModalConsumer>
-  );
