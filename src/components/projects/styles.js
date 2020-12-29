@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Text, Card, Grid} from "atoms/ui/elements";
+import { Text, Card, Grid, Heading} from "atoms/ui/elements";
 export const Title = styled(Text)`
     color: white;
     font-size: 1rem;
@@ -32,4 +32,13 @@ export const CardItem  = styled(Card)`
 `
 export const CardGrid = styled(Grid)`
     grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+`
+
+export const BlockItem = styled.div``
+export const BlockTitle = styled(Heading)`
+    margin-bottom: 1rem;
+`
+export const BlockDescription = styled(Text)``
+export const BlockContainer = styled.div`
+    padding: 1rem;
 `

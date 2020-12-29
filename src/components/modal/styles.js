@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Card} from 'atoms/ui/elements'
 
 export const ModalWrapper = styled.div`
     position: fixed;
@@ -13,8 +14,8 @@ export const ModalWrapper = styled.div`
     background-color: rgba(0,0,0,0.5);
 `
 
-export const ModalContainer = styled.div`
-    background: white;
+export const ModalContainer = styled(Card)`
+    background-color: ${props => props.theme.colors.white};
 `
 
 export const ModalRootEl = styled.div`
@@ -24,3 +25,9 @@ export const ModalRootEl = styled.div`
     z-index: 1;
 `
 
+export const Closer = styled.div`
+    &::after {
+        content: 'x'; 
+        display: block;
+    }
+`

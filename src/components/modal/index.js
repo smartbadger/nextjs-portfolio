@@ -1,11 +1,10 @@
 import { createPortal } from "react-dom";
 import { useContext, useState } from "react";
 import { ModalContext } from "context/modal";
-import { ModalWrapper, ModalRootEl } from './styles'
+import { ModalWrapper, ModalRootEl, ModalContainer, Closer } from './styles'
 
 export const Modal = () => {
   const { modalContent, handleModal, modal } = useContext(ModalContext);
-  
 
   if (modal) {
     const domNode = document.querySelector("#modal-root");
@@ -35,7 +34,10 @@ export const useModal = () => {
 const ModalComponent = ({children, handleModal}) => {
     return (
         <ModalWrapper>
-            {children}
+            <ModalContainer>
+                <Closer onClick={handleModal} />
+                {children}
+            </ModalContainer>
         </ModalWrapper>
     )
 }

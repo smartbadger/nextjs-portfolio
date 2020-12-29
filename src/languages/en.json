@@ -331,10 +331,17 @@
                 "tag": "Personal Project / Denver, CO / 2019",
                 "blocks": [
                 {
-                    "title": "",
-                    "description": "",
+                    "title": "Statify Admin View",
+                    "description": "Statify allowed store owners to create widgets.",
                     "media": {
-                        
+                        "image": {
+                            "srcSet": [
+                                {"src": "./images/statify-ui.jpf", "type": "image/jpf"},
+                                {"src": "./images/statify-ui.webp", "type": "image/webp"}
+                            ],
+                            "fallback": "./images/statify-ui.png",
+                            "alt": "statify admin panel"
+                        }
                     }
                 }
             ]
@@ -353,10 +360,13 @@
                 "tag": "Startup / Denver, CO / 2019",
                 "blocks": [
                 {
-                    "title": "",
-                    "description": "",
+                    "title": "Crypto Fill UI Demo",
+                    "description": "UI prototype for managing crypto wallets, built using vanilla JS and postman API mock responses.",
                     "media": {
-                        
+                        "video": {
+                            "url": "./videos/crypto-fill-video.mp4",
+                            "alt": "statify admin panel"
+                        }
                     }
                 }
             ]

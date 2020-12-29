@@ -9,18 +9,37 @@ import {
   ImageBackground,
   DetailsContainer,
   CardGrid,
+  BlockItem,
+  BlockTitle,
+  BlockDescription,
+  BlockContainer
 } from "./styles";
 import LazyImage from "atoms/ui/lazyimage";
 import { ModalContext } from "context/modal";
+import ReactPlayer from 'react-player'
 
-const ProjectBlocks = () => {
-  let { handleModal } = useContext(ModalContext); // close modal
+const ProjectBlocks = ({ blocks = [] }) => {
+  return (
+    <>
+      {blocks.map(({ title, description, media }, index) => {
+        return (
+          <BlockContainer>
+            <BlockTitle key={`block__${index}`}>{title}</BlockTitle>
+            <BlockDescription key={`block__${index}`}>{description}</BlockDescription>
+            {media.image ? <LazyImage {...media.image} /> : null}
+            {media.video ? <ReactPlayer {...media.video} controls={true} /> : null}
+          </BlockContainer>
+        );
+      })}
+    </>
+  );
 };
 
-const ProjectCard = ({ image, children }) => {
-    let { handleModal } = useContext(ModalContext); // trigger modal
+const ProjectCard = ({ image, children, blocks }) => {
+  const { handleModal } = useContext(ModalContext); // trigger modal
+
   return (
-    <CardItem onClick={() => handleModal(<p>test</p>)}>
+    <CardItem onClick={() => handleModal(blocks)}>
       <ImageBackground>
         <LazyImage {...image} />
       </ImageBackground>
@@ -31,7 +50,7 @@ const ProjectCard = ({ image, children }) => {
 
 const Project = ({ image, subtitle, title, blocks }) => {
   return (
-    <ProjectCard image={image}>
+    <ProjectCard image={image} blocks={<ProjectBlocks blocks={blocks} />}>
       <Title>{title}</Title>
       <SubTitle>{subtitle}</SubTitle>
     </ProjectCard>
@@ -39,7 +58,6 @@ const Project = ({ image, subtitle, title, blocks }) => {
 };
 
 const Projects = ({ title, items }) => {
-
   return (
     <>
       <Heading>{title}</Heading>
@@ -53,5 +71,3 @@ const Projects = ({ title, items }) => {
 };
 
 export default Projects;
-
-import React from "react";
