@@ -1,530 +1,524 @@
 {
-    "meta": {
-        "copyright": "Connor Bailes ©2020. All rights reserved.",
-        "title": "Hi, I'm Connor"
-    },
-    "nav": {
-        "socialbar": "Follow me"
-    },
-    "hero": {
-        "title": "Hi, I'm Connor",
-        "subtitle": "I'll help grow your business",
-        "message": "I'm Full Stack Web developer with experience in e-commerce and delivering SaaS products. I'm Familiar with marketing initiatives and bridging the gap between UI/UX and development. Worked in a cross functional team to deliver applications on time.",
-        "contact": "Contact Me",
-        "image": "/images/myphoto.png"
-    },
-    "skills": {
-        "title": "My Featured Skills",
-        "skills": [
+  "meta": {
+    "copyright": "Connor Bailes ©2020. All rights reserved.",
+    "title": "Hi, I'm Connor"
+  },
+  "nav": {
+    "socialbar": "Follow me"
+  },
+  "hero": {
+    "title": "Hi, I'm Connor",
+    "subtitle": "I'll help grow your business",
+    "message": "I'm Full Stack Web developer with experience in e-commerce and delivering SaaS products. I'm Familiar with marketing initiatives and bridging the gap between UI/UX and development. Worked in a cross functional team to deliver applications on time.",
+    "contact": "Contact Me",
+    "image": "/images/myphoto.png"
+  },
+  "skills": {
+    "title": "My Featured Skills",
+    "skills": [
+      {
+        "skill": "Python",
+        "catagory": "Backend",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/python/python.jxr", "type": "image/jxr" },
+            { "src": "./icons/python/python.jpf", "type": "image/jpf" },
+            { "src": "./icons/python/python.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/python/python.svg",
+          "alt": "Python Icon"
+        },
+        "lvl": 0.75
+      },
+      {
+        "skill": "Mongo DB",
+        "catagory": "Backend",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/mongodb/mongodb.jxr", "type": "image/jxr" },
+            { "src": "./icons/mongodb/mongodb.jpf", "type": "image/jpf" },
+            { "src": "./icons/mongodb/mongodb.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/mongodb/mongodb.svg",
+          "alt": "Mongo DB Icon"
+        },
+        "lvl": 0.6
+      },
+      {
+        "skill": "Postgres",
+        "catagory": "Backend",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/postgre/postgre.jxr", "type": "image/jxr" },
+            { "src": "./icons/postgre/postgre.jpf", "type": "image/jpf" },
+            { "src": "./icons/postgre/postgre.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/postgre/postgre.svg",
+          "alt": "Postgres Icon"
+        },
+        "lvl": 0.5
+      },
+      {
+        "skill": "MySQL",
+        "catagory": "Backend",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/mysql/mysql.jxr", "type": "image/jxr" },
+            { "src": "./icons/mysql/mysql.jpf", "type": "image/jpf" },
+            { "src": "./icons/mysql/mysql.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/mysql/mysql.svg",
+          "alt": "MySQL Icon"
+        },
+        "lvl": 0.5
+      },
+      {
+        "skill": "Ruby",
+        "catagory": "Backend",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/ruby/ruby.jxr", "type": "image/jxr" },
+            { "src": "./icons/ruby/ruby.jpf", "type": "image/jpf" },
+            { "src": "./icons/ruby/ruby.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/ruby/ruby.svg",
+          "alt": "Ruby Icon"
+        },
+        "lvl": 0.3
+      },
+      {
+        "skill": "ReactJS",
+        "catagory": "FrontEnd",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/reactjs/reactjs.jxr", "type": "image/jxr" },
+            { "src": "./icons/reactjs/reactjs.jpf", "type": "image/jpf" },
+            { "src": "./icons/reactjs/reactjs.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/reactjs/reactjs.svg",
+          "alt": "ReactJS Icon"
+        },
+        "lvl": 0.7
+      },
+      {
+        "skill": "Javascript",
+        "catagory": "FrontEnd",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/javascript/javascript.jxr", "type": "image/jxr" },
+            { "src": "./icons/javascript/javascript.jpf", "type": "image/jpf" },
             {
-                "skill": "Python",
-                "catagory": "Backend",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/python/python.jxr", "type": "image/jxr"},
-                        {"src": "./icons/python/python.jpf", "type": "image/jpf"},
-                        {"src": "./icons/python/python.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/python/python.svg",
-                    "alt": "Python Icon"
-                },
-                "lvl": 0.75
-            },
-            {
-                "skill": "Mongo DB",
-                "catagory": "Backend",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/mongodb/mongodb.jxr", "type": "image/jxr"},
-                        {"src": "./icons/mongodb/mongodb.jpf", "type": "image/jpf"},
-                        {"src": "./icons/mongodb/mongodb.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/mongodb/mongodb.svg",
-                    "alt": "Mongo DB Icon"
-                },
-                "lvl": 0.6
-            },
-            {
-                "skill": "Postgres",
-                "catagory": "Backend",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/postgre/postgre.jxr", "type": "image/jxr"},
-                        {"src": "./icons/postgre/postgre.jpf", "type": "image/jpf"},
-                        {"src": "./icons/postgre/postgre.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/postgre/postgre.svg",
-                    "alt": "Postgres Icon"
-                },
-                "lvl": 0.5
-            },
-            {
-                "skill": "MySQL",
-                "catagory": "Backend",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/mysql/mysql.jxr", "type": "image/jxr"},
-                        {"src": "./icons/mysql/mysql.jpf", "type": "image/jpf"},
-                        {"src": "./icons/mysql/mysql.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/mysql/mysql.svg",
-                    "alt": "MySQL Icon"
-                },
-                "lvl": 0.5
-            },
-            {
-                "skill": "Ruby",
-                "catagory": "Backend",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/ruby/ruby.jxr", "type": "image/jxr"},
-                        {"src": "./icons/ruby/ruby.jpf", "type": "image/jpf"},
-                        {"src": "./icons/ruby/ruby.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/ruby/ruby.svg",
-                    "alt": "Ruby Icon"
-                },
-                "lvl": 0.3
-            },
-            {
-                "skill": "ReactJS",
-                "catagory": "FrontEnd",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/reactjs/reactjs.jxr", "type": "image/jxr"},
-                        {"src": "./icons/reactjs/reactjs.jpf", "type": "image/jpf"},
-                        {"src": "./icons/reactjs/reactjs.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/reactjs/reactjs.svg",
-                    "alt": "ReactJS Icon"
-                },
-                "lvl": 0.7
-            },
-            {
-                "skill": "Javascript",
-                "catagory": "FrontEnd",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/javascript/javascript.jxr", "type": "image/jxr"},
-                        {"src": "./icons/javascript/javascript.jpf", "type": "image/jpf"},
-                        {"src": "./icons/javascript/javascript.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/javascript/javascript.svg",
-                    "alt": "Javascript Icon"
-                },
-                "lvl": 0.85
-            },
-            {
-                "skill": "NextJS",
-                "catagory": "FrontEnd",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/nextjs/nextjs.jxr", "type": "image/jxr"},
-                        {"src": "./icons/nextjs/nextjs.jpf", "type": "image/jpf"},
-                        {"src": "./icons/nextjs/nextjs.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/nextjs/nextjs.svg",
-                    "alt": "NextJS Icon"
-                },
-                "lvl": 0.7
-            },
-            {
-                "skill": "FaunaDB",
-                "catagory": "Backend",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/fauna/fauna.jxr", "type": "image/jxr"},
-                        {"src": "./icons/fauna/fauna.jpf", "type": "image/jpf"},
-                        {"src": "./icons/fauna/fauna.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/fauna/fauna.svg",
-                    "alt": "FaunaDB Icon"
-                },
-                "lvl": 0.75
-            },
-            {
-                "skill": "NodeJS",
-                "catagory": "Backend",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/nodejs/nodejs.jxr", "type": "image/jxr"},
-                        {"src": "./icons/nodejs/nodejs.jpf", "type": "image/jpf"},
-                        {"src": "./icons/nodejs/nodejs.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/nodejs/nodejs.svg",
-                    "alt": "NodeJS Icon"
-                },
-                "lvl": 0.6
-            },
-            {
-                "skill": "SCSS/CSS",
-                "catagory": "FrontEnd",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/scss-css/scss-css.jxr", "type": "image/jxr"},
-                        {"src": "./icons/scss-css/scss-css.jpf", "type": "image/jpf"},
-                        {"src": "./icons/scss-css/scss-css.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/scss-css/scss-css.svg",
-                    "alt": "SCSS/CSS Icon"
-                },
-                "lvl": 0.9
-            },
-            {
-                "skill": "Cypress",
-                "catagory": "DevOps",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/cypress/cypress.jxr", "type": "image/jxr"},
-                        {"src": "./icons/cypress/cypress.jpf", "type": "image/jpf"},
-                        {"src": "./icons/cypress/cypress.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/cypress/cypress.svg",
-                    "alt": "Cypress Icon"
-                },
-                "lvl": 0.5
-            },
-            {
-                "skill": "Jest",
-                "catagory": "DevOps",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/jest/jest.jxr", "type": "image/jxr"},
-                        {"src": "./icons/jest/jest.jpf", "type": "image/jpf"},
-                        {"src": "./icons/jest/jest.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/jest/jest.svg",
-                    "alt": "Jest Icon"
-                },
-                "lvl": 0.5
-            },
-            {
-                "skill": "Pug/Handlebars",
-                "catagory": "FrontEnd",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/pug/pug.jxr", "type": "image/jxr"},
-                        {"src": "./icons/pug/pug.jpf", "type": "image/jpf"},
-                        {"src": "./icons/pug/pug.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/pug/pug.svg",
-                    "alt": "Pug/Handlebars Icon"
-                },
-                "lvl": 0.45
-            },
-            {
-                "skill": "Shopify",
-                "catagory": "FrontEnd",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/shopify/shopify.jxr", "type": "image/jxr"},
-                        {"src": "./icons/shopify/shopify.jpf", "type": "image/jpf"},
-                        {"src": "./icons/shopify/shopify.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/shopify/shopify.svg",
-                    "alt": "Shopify Icon"
-                },
-                "lvl": 0.85
-            },
-            {
-                "skill": "Webpack",
-                "catagory": "DevOps",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/webpack/webpack.jxr", "type": "image/jxr"},
-                        {"src": "./icons/webpack/webpack.jpf", "type": "image/jpf"},
-                        {"src": "./icons/webpack/webpack.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/webpack/webpack.svg",
-                    "alt": "Webpack Icon"
-                },
-                "lvl": 0.5
-            },
-            {
-                "skill": "Gulp",
-                "catagory": "DevOps",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/gulp/gulp.jxr", "type": "image/jxr"},
-                        {"src": "./icons/gulp/gulp.jpf", "type": "image/jpf"},
-                        {"src": "./icons/gulp/gulp.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/gulp/gulp.svg",
-                    "alt": "Docker Icon"
-                },
-                "lvl": 0.5
-            },
-            {
-                "skill": "Babel",
-                "catagory": "DevOps",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/babel/babel.jxr", "type": "image/jxr"},
-                        {"src": "./icons/babel/babel.jpf", "type": "image/jpf"},
-                        {"src": "./icons/babel/babel.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/babel/babel.svg",
-                    "alt": "Docker Icon"
-                },
-                "lvl": 0.5
-            },
-            {
-                "skill": "Docker",
-                "catagory": "DevOps",
-                "image": {
-                    "srcSet": [
-                        {"src": "./icons/docker/docker.jxr", "type": "image/jxr"},
-                        {"src": "./icons/docker/docker.jpf", "type": "image/jpf"},
-                        {"src": "./icons/docker/docker.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./icons/docker/docker.svg",
-                    "alt": "Docker Icon"
-                },
-                "lvl": 0.4
+              "src": "./icons/javascript/javascript.webp",
+              "type": "image/webp"
             }
+          ],
+          "fallback": "./icons/javascript/javascript.svg",
+          "alt": "Javascript Icon"
+        },
+        "lvl": 0.85
+      },
+      {
+        "skill": "NextJS",
+        "catagory": "FrontEnd",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/nextjs/nextjs.jxr", "type": "image/jxr" },
+            { "src": "./icons/nextjs/nextjs.jpf", "type": "image/jpf" },
+            { "src": "./icons/nextjs/nextjs.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/nextjs/nextjs.svg",
+          "alt": "NextJS Icon"
+        },
+        "lvl": 0.7
+      },
+      {
+        "skill": "FaunaDB",
+        "catagory": "Backend",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/fauna/fauna.jxr", "type": "image/jxr" },
+            { "src": "./icons/fauna/fauna.jpf", "type": "image/jpf" },
+            { "src": "./icons/fauna/fauna.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/fauna/fauna.svg",
+          "alt": "FaunaDB Icon"
+        },
+        "lvl": 0.75
+      },
+      {
+        "skill": "NodeJS",
+        "catagory": "Backend",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/nodejs/nodejs.jxr", "type": "image/jxr" },
+            { "src": "./icons/nodejs/nodejs.jpf", "type": "image/jpf" },
+            { "src": "./icons/nodejs/nodejs.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/nodejs/nodejs.svg",
+          "alt": "NodeJS Icon"
+        },
+        "lvl": 0.6
+      },
+      {
+        "skill": "SCSS/CSS",
+        "catagory": "FrontEnd",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/scss-css/scss-css.jxr", "type": "image/jxr" },
+            { "src": "./icons/scss-css/scss-css.jpf", "type": "image/jpf" },
+            { "src": "./icons/scss-css/scss-css.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/scss-css/scss-css.svg",
+          "alt": "SCSS/CSS Icon"
+        },
+        "lvl": 0.9
+      },
+      {
+        "skill": "Cypress",
+        "catagory": "DevOps",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/cypress/cypress.jxr", "type": "image/jxr" },
+            { "src": "./icons/cypress/cypress.jpf", "type": "image/jpf" },
+            { "src": "./icons/cypress/cypress.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/cypress/cypress.svg",
+          "alt": "Cypress Icon"
+        },
+        "lvl": 0.5
+      },
+      {
+        "skill": "Jest",
+        "catagory": "DevOps",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/jest/jest.jxr", "type": "image/jxr" },
+            { "src": "./icons/jest/jest.jpf", "type": "image/jpf" },
+            { "src": "./icons/jest/jest.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/jest/jest.svg",
+          "alt": "Jest Icon"
+        },
+        "lvl": 0.5
+      },
+      {
+        "skill": "Pug/Handlebars",
+        "catagory": "FrontEnd",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/pug/pug.jxr", "type": "image/jxr" },
+            { "src": "./icons/pug/pug.jpf", "type": "image/jpf" },
+            { "src": "./icons/pug/pug.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/pug/pug.svg",
+          "alt": "Pug/Handlebars Icon"
+        },
+        "lvl": 0.45
+      },
+      {
+        "skill": "Shopify",
+        "catagory": "FrontEnd",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/shopify/shopify.jxr", "type": "image/jxr" },
+            { "src": "./icons/shopify/shopify.jpf", "type": "image/jpf" },
+            { "src": "./icons/shopify/shopify.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/shopify/shopify.svg",
+          "alt": "Shopify Icon"
+        },
+        "lvl": 0.85
+      },
+      {
+        "skill": "Webpack",
+        "catagory": "DevOps",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/webpack/webpack.jxr", "type": "image/jxr" },
+            { "src": "./icons/webpack/webpack.jpf", "type": "image/jpf" },
+            { "src": "./icons/webpack/webpack.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/webpack/webpack.svg",
+          "alt": "Webpack Icon"
+        },
+        "lvl": 0.5
+      },
+      {
+        "skill": "Gulp",
+        "catagory": "DevOps",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/gulp/gulp.jxr", "type": "image/jxr" },
+            { "src": "./icons/gulp/gulp.jpf", "type": "image/jpf" },
+            { "src": "./icons/gulp/gulp.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/gulp/gulp.svg",
+          "alt": "Docker Icon"
+        },
+        "lvl": 0.5
+      },
+      {
+        "skill": "Babel",
+        "catagory": "DevOps",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/babel/babel.jxr", "type": "image/jxr" },
+            { "src": "./icons/babel/babel.jpf", "type": "image/jpf" },
+            { "src": "./icons/babel/babel.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/babel/babel.svg",
+          "alt": "Docker Icon"
+        },
+        "lvl": 0.5
+      },
+      {
+        "skill": "Docker",
+        "catagory": "DevOps",
+        "image": {
+          "srcSet": [
+            { "src": "./icons/docker/docker.jxr", "type": "image/jxr" },
+            { "src": "./icons/docker/docker.jpf", "type": "image/jpf" },
+            { "src": "./icons/docker/docker.webp", "type": "image/webp" }
+          ],
+          "fallback": "./icons/docker/docker.svg",
+          "alt": "Docker Icon"
+        },
+        "lvl": 0.4
+      }
+    ]
+  },
+  "experience": {
+    "title": "Employment & Experience",
+    "history": [
+      {
+        "company": "Yodi LLC",
+        "title": "Founder - FullStack Developer",
+        "startdate": "10/31/2019",
+        "enddate": "Present"
+      },
+      {
+        "company": "PopSockets LLC",
+        "title": "Frontend Developer",
+        "startdate": "05/15/2017",
+        "enddate": "10/31/2019"
+      },
+      {
+        "company": "Marietta College",
+        "title": "Jr. Web Developer",
+        "startdate": "08/20/2016",
+        "enddate": "05/10/2017"
+      },
+      {
+        "company": "Ricoh",
+        "title": "Software Intern",
+        "startdate": "05/31/2016",
+        "enddate": "08/10/2016"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Works & Projects",
+    "details": "More Details",
+    "items": [
+      {
+        "image": {
+          "srcSet": [
+            { "src": "./images/le-poemcast-lp.jpf", "type": "image/jpf" },
+            { "src": "./images/le-poemcast-lp.webp", "type": "image/webp" }
+          ],
+          "fallback": "./images/le-poemcast-lp.png",
+          "alt": "le-poemcast-lp Icon"
+        },
+        "title": "Le Poem Cast",
+        "subtitle": "FinalStraw LLC",
+        "tag": "",
+        "blocks": [
+          {
+            "title": "",
+            "description": "",
+            "media": {}
+          }
         ]
-    },
-    "experience": {
-        "title": "Employment & Experience",
-        "history": [
-            {
-                "company": "Yodi LLC",
-                "title": "Founder - FullStack Developer",
-                "startdate": "10/31/2019",
-                "enddate": "Present"
-            },
-            {
-                "company": "PopSockets LLC",
-                "title": "Frontend Developer",
-                "startdate": "05/15/2017",
-                "enddate": "10/31/2019"
-            },
-            {
-                "company": "Marietta College",
-                "title": "Jr. Web Developer",
-                "startdate": "08/20/2016",
-                "enddate": "05/10/2017"
-            },
-            {
-                "company": "Ricoh",
-                "title": "Software Intern",
-                "startdate": "05/31/2016",
-                "enddate": "08/10/2016"
+      },
+      {
+        "image": {
+          "srcSet": [
+            { "src": "./images/sounds-to-sights.jpf", "type": "image/jpf" },
+            { "src": "./images/sounds-to-sights.webp", "type": "image/webp" }
+          ],
+          "fallback": "./images/sounds-to-sights.png",
+          "alt": "sounds-to-sights Icon"
+        },
+        "title": "Shopify Customizer",
+        "subtitle": "SoundsToSights LLC",
+        "tag": "",
+        "blocks": [
+          {
+            "title": "",
+            "description": "",
+            "media": {}
+          }
+        ]
+      },
+      {
+        "image": {
+          "srcSet": [
+            { "src": "./images/worth-street.jpf", "type": "image/jpf" },
+            { "src": "./images/worth-street.webp", "type": "image/webp" }
+          ],
+          "fallback": "./images/worth-street.png",
+          "alt": "banking app image"
+        },
+        "title": "Banking App",
+        "subtitle": "WorthStreet LLC",
+        "tag": "",
+        "blocks": [
+          {
+            "title": "",
+            "description": "",
+            "media": {}
+          }
+        ]
+      },
+      {
+        "image": {
+          "srcSet": [
+            { "src": "./images/logo-popsockets.jpf", "type": "image/jpf" },
+            { "src": "./images/logo-popsockets.webp", "type": "image/webp" }
+          ],
+          "fallback": "./images/logo-popsockets.png",
+          "alt": "Popsockets logo"
+        },
+        "title": "Product Customizer",
+        "subtitle": "PopSockets LLC",
+        "tag": "",
+        "blocks": [
+          {
+            "title": "",
+            "description": "",
+            "media": {}
+          }
+        ]
+      },
+      {
+        "image": {
+          "srcSet": [
+            { "src": "./images/crypto-fill.jpf", "type": "image/jpf" },
+            { "src": "./images/crypto-fill.webp", "type": "image/webp" }
+          ],
+          "fallback": "./images/crypto-fill.png",
+          "alt": "crypto-fill Icon"
+        },
+        "title": "Cryptofill",
+        "subtitle": "UI Prototype",
+        "tag": "Startup / Denver, CO / 2019",
+        "blocks": [
+          {
+            "title": "Crypto Fill UI Demo",
+            "description": "UI prototype for managing crypto wallets, built using vanilla JS and postman API mock responses.",
+            "media": {
+              "video": {
+                "url": "./videos/crypto-fill-video.mp4",
+                "alt": "statify admin panel"
+              }
             }
+          }
         ]
-    },
-    "projects": {
-        "title": "Works & Projects",
-        "details": "More Details",
-        "items": [
-            {
-                "image": {
-                    "srcSet": [
-                        {"src": "./images/statify.jpf", "type": "image/jpf"},
-                        {"src": "./images/statify.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./images/statify.png",
-                    "alt": "Statify logo"
-                },
-                "title": "Statify",
-                "subtitle": "Shopify SaaS Application",
-                "tag": "Personal Project / Denver, CO / 2019",
-                "blocks": [
-                {
-                    "title": "Statify Admin View",
-                    "description": "Statify allowed store owners to create widgets.",
-                    "media": {
-                        "image": {
-                            "srcSet": [
-                                {"src": "./images/statify-ui.jpf", "type": "image/jpf"},
-                                {"src": "./images/statify-ui.webp", "type": "image/webp"}
-                            ],
-                            "fallback": "./images/statify-ui.png",
-                            "alt": "statify admin panel"
-                        }
-                    }
-                }
-            ]
-            },
-            {
-                "image": {
-                    "srcSet": [
-                        {"src": "./images/crypto-fill.jpf", "type": "image/jpf"},
-                        {"src": "./images/crypto-fill.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./images/crypto-fill.png",
-                    "alt": "crypto-fill Icon"
-                },
-                "title": "Cryptofill",
-                "subtitle": "UI Prototype",
-                "tag": "Startup / Denver, CO / 2019",
-                "blocks": [
-                {
-                    "title": "Crypto Fill UI Demo",
-                    "description": "UI prototype for managing crypto wallets, built using vanilla JS and postman API mock responses.",
-                    "media": {
-                        "video": {
-                            "url": "./videos/crypto-fill-video.mp4",
-                            "alt": "statify admin panel"
-                        }
-                    }
-                }
-            ]
-            },
-            {
-                "image": {
-                    "srcSet": [
-                        {"src": "./images/shopify-orders-map.jpf", "type": "image/jpf"},
-                        {"src": "./images/shopify-orders-map.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./images/shopify-orders-map.webp",
-                    "alt": "Custom map integration with shopify"
-                },
-                "title": "Shopify Orders Map",
-                "subtitle": "GreatLeaps LLC",
-                "tag": "Great Leaps LLC / Gainsville, FL / 2019",
-                "blocks": [
-                {
-                    "title": "",
-                    "description": "",
-                    "media": {
-                        
-                    }
-                }
-            ]
-            },
-            {
-                "image": {
-                    "srcSet": [
-                        {"src": "./images/le-poemcast-lp.jpf", "type": "image/jpf"},
-                        {"src": "./images/le-poemcast-lp.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./images/le-poemcast-lp.png",
-                    "alt": "le-poemcast-lp Icon"
-                },
-                "title": "Le Poem Cast",
-                "subtitle": "FinalStraw LLC",
-                "tag": "",
-                "blocks": [
-                {
-                    "title": "",
-                    "description": "",
-                    "media": {
-                        
-                    }
-                }
-            ]
-            },
-            {
-                "image": {
-                    "srcSet": [
-                        {"src": "./images/sounds-to-sights.jpf", "type": "image/jpf"},
-                        {"src": "./images/sounds-to-sights.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./images/sounds-to-sights.png",
-                    "alt": "sounds-to-sights Icon"
-                },
-                "title": "Shopify Customizer",
-                "subtitle": "SoundsToSights LLC",
-                "tag": "",
-                "blocks": [
-                {
-                    "title": "",
-                    "description": "",
-                    "media": {
-                        
-                    }
-                }
-            ]
-            },
-            {
-                "image": {
-                    "srcSet": [
-                        {"src": "./images/worth-street.jpf", "type": "image/jpf"},
-                        {"src": "./images/worth-street.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./images/worth-street.png",
-                    "alt": "banking app image"
-                },
-                "title": "Banking App",
-                "subtitle": "WorthStreet LLC",
-                "tag": "",
-                "blocks": [
-                {
-                    "title": "",
-                    "description": "",
-                    "media": {
-                        
-                    }
-                }
-            ]
-            },{
-                "image": {
-                    "srcSet": [
-                        {"src": "./images/logo-popsockets.jpf", "type": "image/jpf"},
-                        {"src": "./images/logo-popsockets.webp", "type": "image/webp"}
-                    ],
-                    "fallback": "./images/logo-popsockets.png",
-                    "alt": "Popsockets logo"
-                },
-                "title": "Product Customizer",
-                "subtitle": "PopSockets LLC",
-                "tag": "",
-                "blocks": [
-                {
-                    "title": "",
-                    "description": "",
-                    "media": {
-                        
-                    }
-                }
-            ]
+      },
+      {
+        "image": {
+          "srcSet": [
+            { "src": "./images/shopify-orders-map.jpf", "type": "image/jpf" },
+            { "src": "./images/shopify-orders-map.webp", "type": "image/webp" }
+          ],
+          "fallback": "./images/shopify-orders-map.webp",
+          "alt": "Custom map integration with shopify"
+        },
+        "title": "Shopify Orders Map",
+        "subtitle": "GreatLeaps LLC",
+        "tag": "Great Leaps LLC / Gainsville, FL / 2019",
+        "blocks": [
+          {
+            "title": "",
+            "description": "",
+            "media": {}
+          }
+        ]
+      },
+      {
+        "image": {
+          "srcSet": [
+            { "src": "./images/statify.jpf", "type": "image/jpf" },
+            { "src": "./images/statify.webp", "type": "image/webp" }
+          ],
+          "fallback": "./images/statify.png",
+          "alt": "Statify logo"
+        },
+        "title": "Statify",
+        "subtitle": "Shopify SaaS Application",
+        "tag": "Personal Project / Denver, CO / 2019",
+        "blocks": [
+          {
+            "title": "Statify Admin View",
+            "description": "Statify allowed store owners to create widgets.",
+            "media": {
+              "image": {
+                "srcSet": [
+                  { "src": "./images/statify-ui.jpf", "type": "image/jpf" },
+                  { "src": "./images/statify-ui.webp", "type": "image/webp" }
+                ],
+                "fallback": "./images/statify-ui.png",
+                "alt": "statify admin panel"
+              }
             }
+          }
         ]
-    },
-    "certifications": {
-        "title": "My Certifications",
-        "certs": [
-            {
-                "title": "Shopify Theme Developer",
-                "issuer": "Shopify Partner Academy",
-                "date": "05/01/2019",
-                "link": ""
-            },
-            {
-                "title": "AWS Server Architecture",
-                "issuer": "Udemy",
-                "date": "06/01/2019",
-                "link": ""
-            },
-            {
-                "title": "Full Stack Web Developer",
-                "issuer": "Career Foundry",
-                "date": "12/15/2018",
-                "link": ""
-            },
-            {
-                "title": "SVG Animation",
-                "issuer": "Udemy",
-                "date": "06/01/2018",
-                "link": ""
-            },
-            {
-                "title": "Advanced SCSS/CSS",
-                "issuer": "Udemy",
-                "date": "06/01/2018",
-                "link": ""
-            },
-            {
-                "title": "Canvas Animations",
-                "issuer": "Udemy",
-                "date": "06/01/2018",
-                "link": ""
-            }
-        ]
-    },
-    "contact": {
-        "title": "Contact me now!",
-        "subtitle": "Ready to get in touch? Please submit your details below and I'll get back to you as soon as possible"
-    }
+      }
+    ]
+  },
+  "certifications": {
+    "title": "My Certifications",
+    "certs": [
+      {
+        "title": "Shopify Theme Developer",
+        "issuer": "Shopify Partner Academy",
+        "date": "05/01/2019",
+        "link": ""
+      },
+      {
+        "title": "AWS Server Architecture",
+        "issuer": "Udemy",
+        "date": "06/01/2019",
+        "link": ""
+      },
+      {
+        "title": "Full Stack Web Developer",
+        "issuer": "Career Foundry",
+        "date": "12/15/2018",
+        "link": ""
+      },
+      {
+        "title": "SVG Animation",
+        "issuer": "Udemy",
+        "date": "06/01/2018",
+        "link": ""
+      },
+      {
+        "title": "Advanced SCSS/CSS",
+        "issuer": "Udemy",
+        "date": "06/01/2018",
+        "link": ""
+      },
+      {
+        "title": "Canvas Animations",
+        "issuer": "Udemy",
+        "date": "06/01/2018",
+        "link": ""
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact me now!",
+    "subtitle": "Ready to get in touch? Please submit your details below and I'll get back to you as soon as possible"
+  }
 }

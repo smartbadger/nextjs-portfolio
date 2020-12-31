@@ -1,16 +1,18 @@
 import styled from "styled-components";
+import { PageWrapperStyles } from 'atoms/ui/layout'
 
 export const Wrapper = styled.div`
   position: relative;
   z-index: 1;
   display: flex;
+  min-height: 100vh;
+  align-items: center;
 `;
 export const Container = styled.div`
   position: relative;
   margin: 2rem 0;
   z-index: 5;
   width: 100%;
-
 `;
 export const Background = styled.div`
   position: absolute;
