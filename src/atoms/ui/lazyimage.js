@@ -78,7 +78,7 @@ const StyledImage = styled(ImgWithFallback)`
   object-fit: contain;
 `;
 
-const LazyImage = ({ srcSet, fallback, alt }) => {
+const LazyImage = ({ srcSet, fallback, alt, scrollContainer= null }) => {
   const [broken, setBroken] = useState(false)
   const refPlaceholder = useRef();
 
@@ -94,7 +94,7 @@ const LazyImage = ({ srcSet, fallback, alt }) => {
     <ImageWrapper>
       <Placeholder ref={refPlaceholder} />
       <MissingImage broken={broken} alt={alt}/>
-      <LazyLoad>
+      <LazyLoad once scroll throttle={100}>
         <StyledImage
           onLoad={removePlaceholder}
           onError={addBrokenImage}

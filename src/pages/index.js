@@ -7,7 +7,7 @@ import Certs from "components/certs";
 import Contact from "components/contact";
 import Footer from "components/footer";
 import Head from "next/head";
-import { PageWrapper } from "atoms/ui/layout";
+import { PageWrapper, ScrollSnapWrapper } from "atoms/ui/layout";
 import { getContent } from "context/language";
 import { useRef, useEffect } from "react";
 import ScrollSnap from "scroll-snap";
@@ -15,12 +15,12 @@ import ScrollSnap from "scroll-snap";
 const Index = () => {
   const container = useRef();
   const callback = () => {
-    console.log('element snapped')
-  }
+    console.log("element snapped");
+  };
   const bindScrollSnap = (container) => {
     const element = container.current;
     const snapElement = new ScrollSnap(element, {
-      snapDestinationX: '0%',
+      snapDestinationX: "0%",
       snapDestinationY: "100%",
     });
 
@@ -37,7 +37,8 @@ const Index = () => {
         <title>{getContent("meta").title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <PageWrapper ref={container}>
+
+      <ScrollSnapWrapper ref={container}>
         <ContentSection background="darkBlue">
           <Hero {...getContent("hero")} textColor="white" />
         </ContentSection>
@@ -56,8 +57,8 @@ const Index = () => {
         <ContentSection background="lightGray">
           <Contact {...getContent("contact")} />
         </ContentSection>
-        <Footer {...getContent("meta")} />
-      </PageWrapper>
+      </ScrollSnapWrapper>
+      <Footer {...getContent("meta")} />
     </>
   );
 };

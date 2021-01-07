@@ -4753,6 +4753,11 @@ schema-utils@^2.6.1, schema-utils@^2.6.6:
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
 
+scroll-snap@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/scroll-snap/-/scroll-snap-3.1.0.tgz#298900b6bd9df2758d56703248289d7d4847fd51"
+  integrity sha512-suYM4T2dr/LIE8VRgpGNzU9jK9FYUFXtX4z4i9WCq5ZzWKLwcHsSbCTEgES+89mLx7Nnn2//Tt0gtLODWmNQyg==
+
 semver@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"

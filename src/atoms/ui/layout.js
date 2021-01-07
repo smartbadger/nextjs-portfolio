@@ -10,5 +10,5 @@ export const PageWrapper = styled.div`
 `
 export const ScrollSnapWrapper = styled.div`
     height: 100vh;
-    overflow: scroll;
+    overflow: auto;
 `

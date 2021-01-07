@@ -5,14 +5,14 @@ export const Wrapper = styled.div`
   position: relative;
   z-index: 1;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
 `;
 export const Container = styled.div`
   position: relative;
   margin: 2rem 0;
   z-index: 5;
-  width: 100%;
+  ${PageWrapperStyles}
 `;
 export const Background = styled.div`
   position: absolute;
