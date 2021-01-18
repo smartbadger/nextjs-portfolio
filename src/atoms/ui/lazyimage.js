@@ -78,7 +78,7 @@ const StyledImage = styled(ImgWithFallback)`
   object-fit: contain;
 `;
 
-const LazyImage = ({ srcSet, fallback, alt, scrollContainer= null }) => {
+const LazyImage = ({ srcSet, fallback, alt }) => {
   const [broken, setBroken] = useState(false)
   const refPlaceholder = useRef();
 
