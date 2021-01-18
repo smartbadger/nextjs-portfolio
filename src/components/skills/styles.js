@@ -1,5 +1,24 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { Text, Box, Grid } from "atoms/ui/elements";
+
+const onLoad = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`
+const progressBar = keyframes`
+  from {
+    transform: translate(-100%);
+  }
+
+  to {
+    transform: translate(0%);
+  }
+`
 
 export const SkillItem = styled.div`
   display: none;
@@ -61,16 +80,21 @@ export const SkillTabsContainer = styled.ul`
 `;
 
 
+const helper = (props) => {
+  return props.catagories.map(cat => {
+      return css`
+        &[data-active-catagory="${cat}"] > [data-catagory="${cat}"] {
+          display: block;
+          animation: ${onLoad} .5s ease-in 1;
+        }
+        &[data-active-catagory="${cat}"] > [data-catagory="${cat}"] div[value] {
+          animation-delay: 1s;
+          animation: ${progressBar} 1s ease-in-out 1;
+        }
+        `
+    });
+}
 
 export const SkillsGrid = styled(Grid)`
-  ${(props) => {
-    let activeStyles = ``;
-    props.catagories.forEach(cat => {
-        activeStyles += `
-          &[data-active-catagory="${cat}"] > ${SkillItem}[data-catagory="${cat}"] {
-            display: block;
-          }`
-      });
-    return activeStyles
-  }}
+  ${props => helper(props)}
 `;
