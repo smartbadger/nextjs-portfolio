@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'styled-components'
 import { LanguageProvider } from 'context/language'
+import { ModalProvider } from 'context/modal'
 import Normalize from 'atoms/normalize'
 import theme from 'atoms/theme'
 
@@ -7,8 +8,10 @@ const MyApp = ({ Component, pageProps }) => {
     return (
         <LanguageProvider>
             <ThemeProvider theme={theme}>
-                <Component {...pageProps} />
                 <Normalize />
+                <ModalProvider>
+                    <Component {...pageProps} />
+                </ModalProvider>
             </ThemeProvider>
         </LanguageProvider>
     )

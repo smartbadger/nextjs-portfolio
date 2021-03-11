@@ -74,7 +74,10 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'heading';
+    local(Montserrat);
+}
 * {
   font-family: 'Montserrat', Sans-Serif;
 }

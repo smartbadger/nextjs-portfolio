@@ -12,10 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.29.1",
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-lazyload": "^3.1.0",
     "react-map-gl": "^5.2.7",
+    "react-player": "^2.7.2",
+    "rebass": "^4.0.7",
+    "scroll-snap": "^3.1.0",
     "styled-components": "^5.1.1",
     "styled-normalize": "^8.0.7"
   },
