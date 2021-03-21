@@ -12,6 +12,10 @@ export const Explink = styled.li`
     margin-bottom: 1rem;
     position: relative;
     padding-left: 2.5rem;
+    @media (max-width: 950px) {
+        display: inline-flex;
+        flex-direction: column;
+    }
     &::before {
         content: "";
         width: 1rem;
@@ -42,9 +46,16 @@ export const Explist = styled.ul`
   list-style: none;
   margin-top: 3rem;
   columns: 2;
-
+  @media (max-width: 950px) {
+    columns: 1;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  
 `;
 export const ExpDetails = styled(Text)`
     font-size: .9rem;
-    color: ${props => props.theme.colors.textGray || 'gray'};
+    color: ${props => props.theme.colors.black || 'gray'};
+    opacity: 0.75;
 `;

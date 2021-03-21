@@ -13,7 +13,9 @@ import {
 import { useState, useEffect } from "react";
 
 const Skills = ({ title, skills }) => {
-  const [catagory, setCatagory] = useState(skills[0].catagory);
+  const filteredSkills = skills.filter(el => !el.hide)
+
+  const [catagory, setCatagory] = useState(filteredSkills[0].catagory);
   const getSkillLevel = (value) => {
     switch (true) {
       case value >= 0.7:
@@ -75,7 +77,7 @@ const Skills = ({ title, skills }) => {
       ))}
     </SkillTabsContainer>
   );
-  const catagories = skills.map(el => el.catagory).filter(onlyUnique)
+  const catagories = filteredSkills.map(el => el.catagory).filter(onlyUnique)
 
   return (
     <>
@@ -86,7 +88,7 @@ const Skills = ({ title, skills }) => {
       />
       <SkillsGrid data-active-catagory={catagory} catagories={catagories}>
         { 
-          skills.map((skillObj, index) => <CreateSkill {...skillObj} key={`skill-${index}`} />)
+          filteredSkills.map((skillObj, index) => <CreateSkill {...skillObj} key={`skill-${index}`} />)
         }
       </SkillsGrid>
     </>

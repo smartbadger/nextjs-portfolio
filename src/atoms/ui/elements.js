@@ -33,7 +33,8 @@ export const BackgroundGradient = styled.div`
 
 export const Grid = styled(Box)`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 14rem));
+    justify-content: center;
     grid-gap: 1rem;
 
 `

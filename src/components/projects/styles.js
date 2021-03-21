@@ -32,7 +32,6 @@ export const CardItem  = styled(Card)`
 `
 export const CardGrid = styled(Grid)`
     grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-    overflow-y: scroll;
 `
 
 export const BlockItem = styled.div``

@@ -1,4 +1,4 @@
-const canvasChart = {
+export default {
     timeout: false,
 
     init: function() {
@@ -169,6 +169,3 @@ const canvasChart = {
         
     }
 }
-document.addEventListener("DOMContentLoaded", evt => {
-    canvasChart.init()
-  })

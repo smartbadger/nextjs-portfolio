@@ -4,12 +4,11 @@ export const Wrapper = styled.div`
   position: relative;
   z-index: 1;
   display: flex;
-  min-height: 100vh;
+  min-height: ${(props) => props.height ? props.height : 'unset'};
   align-items: center;
 `;
 export const Container = styled.div`
-  position: relative;
-  margin: 2rem 0;
+  margin: 5rem 0;
   width: 100%;
   z-index: 5;
 `;

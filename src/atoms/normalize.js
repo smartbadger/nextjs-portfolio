@@ -80,7 +80,35 @@ const GlobalStyle = createGlobalStyle`
 }
 * {
   font-family: 'Montserrat', Sans-Serif;
+  box-sizing: border-box;
 }
+
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: overlay;
+  }
+  body::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px 1px rgb(0 0 0 / 30%);
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    body::-webkit-scrollbar
+    {
+        width: 0.5rem;
+        background-color: #F5F5F500;
+    }
+
+    body::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 3px 1px rgb(0 0 0 / 50%);
+        background-color: #4a4a4a;
+    }
 
 `;
 export default GlobalStyle;

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "copyright": "Connor Bailes ©2020. All rights reserved.",
+    "copyright": "Connor Bailes ©2021. All rights reserved.",
     "title": "Hi, I'm Connor"
   },
   "nav": {
@@ -73,6 +73,7 @@
         "lvl": 0.5
       },
       {
+        "hide": true,
         "skill": "Ruby",
         "catagory": "Backend",
         "image": {

@@ -19,14 +19,14 @@ const Experience = ({ title, history }) => {
   return (
     <>
       <Heading bg="dark">{title}</Heading>
-      <Flex mx={-2}>
-        <Box width={1 / 2} px={2}>
+      <Flex flexWrap='wrap' justifyContent="center" mx={-2}>
+        <Box width={[300, 1 / 2]} px={2}>
           <LazyImage
             alt="man at desk"
             fallback="/images/dude-at-computer.png"
           />
         </Box>
-        <Box width={1 / 2} px={2}>
+        <Box width={[300, 1 / 2]} px={2}>
           <Explist>
             {history.map((item) => (
               <ExpItem {...item} key={item.title} />

@@ -39,7 +39,8 @@ const ProjectCard = ({ image, children, blocks }) => {
   const { handleModal } = useContext(ModalContext); // trigger modal
 
   return (
-    <CardItem onClick={() => handleModal(blocks)}>
+    <CardItem>
+    {/* <CardItem onClick={() => handleModal(blocks)}> */}
       <ImageBackground>
         <LazyImage {...image} />
       </ImageBackground>
