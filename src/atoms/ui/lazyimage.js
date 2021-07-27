@@ -94,7 +94,7 @@ const LazyImage = ({ srcSet, fallback, alt }) => {
     <ImageWrapper>
       <Placeholder ref={refPlaceholder} />
       <MissingImage broken={broken} alt={alt}/>
-      <LazyLoad once scroll throttle={100}>
+      <LazyLoad once scroll throttle={100} offset={300}>
         <StyledImage
           onLoad={removePlaceholder}
           onError={addBrokenImage}

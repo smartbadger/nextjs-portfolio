@@ -99,7 +99,16 @@
           "fallback": "./icons/reactjs/reactjs.svg",
           "alt": "ReactJS Icon"
         },
-        "lvl": 0.7
+        "lvl": 0.8
+      },
+      {
+        "skill": "VueJs",
+        "catagory": "FrontEnd",
+        "image": {
+          "fallback": "./icons/vue/vue.svg",
+          "alt": "VueJS Icon"
+        },
+        "lvl": 0.5
       },
       {
         "skill": "Javascript",
@@ -214,7 +223,7 @@
           "fallback": "./icons/pug/pug.svg",
           "alt": "Pug/Handlebars Icon"
         },
-        "lvl": 0.45
+        "lvl": 0.5
       },
       {
         "skill": "Shopify",

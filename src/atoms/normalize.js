@@ -76,8 +76,9 @@ const GlobalStyle = createGlobalStyle`
 }
 @font-face {
     font-family: 'heading';
-    local(Montserrat);
+    src: local('Montserrat');
 }
+
 * {
   font-family: 'Montserrat', Sans-Serif;
   box-sizing: border-box;
