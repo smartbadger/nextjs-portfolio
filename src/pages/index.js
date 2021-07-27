@@ -36,9 +36,6 @@ const Index = () => {
         <ContentSection background="white">
           <Certs {...getContent("certifications")} />
         </ContentSection>
-        {/* <ContentSection background="lightGray">
-          <Contact {...getContent("contact")} />
-        </ContentSection> */}
       </PageWrapper>
       <Footer {...getContent("meta")} />
     </>

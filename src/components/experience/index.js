@@ -19,8 +19,8 @@ const Experience = ({ title, history }) => {
   return (
     <>
       <Heading bg="dark">{title}</Heading>
-      <Flex flexWrap='wrap' justifyContent="center" mx={-2}>
-        <Box width={[300, 1 / 2]} px={2}>
+      <Flex flexWrap='wrap' justifyContent="center" alignContent="center" mx={-2}>
+        <Box width={[400, 1 / 3]} px={2} style={{margin: 'auto 0'}}>
           <LazyImage
             alt="man at desk"
             fallback="/images/dude-at-computer.png"
